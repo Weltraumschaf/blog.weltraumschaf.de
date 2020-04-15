@@ -17,7 +17,7 @@ enableRobotsTXT     = true
 [params]
     blogHead            = "Das Weltraumschaf"               # Full name shows on blog post pages
     firstName           = "Weltraumschaf"                   # First name shows in introduction on main page
-    tagLine             = "Supreme Head of Inteligence Targeting - Level 5 Laser Lotus" # Appears after the introduction
+    tagLine             = "Software Architecture — IT-Security — Clean Code " # Appears after the introduction
     introHeight         = "large"                           # Input either 'medium' or 'large' or 'fullheight'
     themeStyle          = "dark"                            # Choose 'light' or 'dark'
     avatar              = "img/ich.jpg"                     # Path to image in static folder eg. img/avatar.png, or comment out to remove
@@ -27,7 +27,8 @@ enableRobotsTXT     = true
     dateForm            = "2. Jan 2006"
     dateFormFull        = "2. Jan 2006 15:04:05 EST"
     cacheBuster         = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-    description         = "Website Description"             # Max 160 characters show in search results
+    # Max 160 characters show in search results
+    description         = "My personal thoughts about Software Architecture, Security, Clean Code and lot of other things."
     faviconFile         = "img/favicon.ico"
     pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
     pygmentsCodefences  = true
