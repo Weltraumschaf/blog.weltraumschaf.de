@@ -50,7 +50,7 @@ enableRobotsTXT     = true
     shareGooglePlus     = false
 
 # Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: http://fontawesome.io/cheatsheet/
+# Find icon names here: https://fontawesome.com/v4.7.0/icons/
 
 [[params.social]]
     url  = "http://weltraumschaf.github.io/"
@@ -62,7 +62,7 @@ enableRobotsTXT     = true
 
 [[params.social]]
     url  = "https://dev.to/weltraumschaf"
-    icon = "dev"
+    icon = "laptop"
 
 [[params.social]]
     url  = "https://stackoverflow.com/users/952722/weltraumschaf"
