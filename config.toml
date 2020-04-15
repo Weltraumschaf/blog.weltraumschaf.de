@@ -69,9 +69,5 @@ enableRobotsTXT     = true
     icon = "linkedin"
 
 [[params.social]]
-    url  = "https://plus.google.com/111699688981457167133/posts"
-    icon = "google-plus"
-
-[[params.social]]
     url  = "https://soundcloud.com/weltraumschaf"
     icon = "soundcloud"
