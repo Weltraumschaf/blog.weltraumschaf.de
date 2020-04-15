@@ -61,6 +61,14 @@ enableRobotsTXT     = true
     icon = "twitter"
 
 [[params.social]]
+    url  = "https://dev.to/weltraumschaf"
+    icon = "dev"
+
+[[params.social]]
+    url  = "https://stackoverflow.com/users/952722/weltraumschaf"
+    icon = "stack-overflow"
+
+[[params.social]]
     url  = "https://www.xing.com/profile/Sven_Strittmatter"
     icon = "xing"
 
