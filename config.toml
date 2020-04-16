@@ -3,6 +3,11 @@ baseURL             = "https://blog.weltraumschaf.de/"
 languageCode        = "en-us"
 title               = "Das Weltraumschaf"
 theme               = "introduction"
+# theme               = "hugo-notepadium"
+# theme               = "vienna"
+# theme               = "hugo-tikva"
+# theme               = "hugo-dusk"
+# theme               = "beyondnothing"
 enforce_ssl         = true
 builddrafts         = false     # Include pages with draft status of true
 canonifyurls        = true      # Turns relative urls into absolute urls
@@ -15,68 +20,79 @@ enableRobotsTXT     = true
 
 
 [params]
-    blogHead            = "Das Weltraumschaf"               # Full name shows on blog post pages
-    firstName           = "Weltraumschaf"                   # First name shows in introduction on main page
-    tagLine             = "Software Architecture — IT-Security — Clean Code " # Appears after the introduction
-    introHeight         = "large"                           # Input either 'medium' or 'large' or 'fullheight'
-    themeStyle          = "dark"                            # Choose 'light' or 'dark'
-    avatar              = "img/ich.jpg"                     # Path to image in static folder eg. img/avatar.png, or comment out to remove
-    email               = "ich@weltraumschaf.de"            # Shows in contact section, or leave blank to omit
-    localTime           = true                              # Show your current local time in contact section
-    timeZone            = "Europe/Berlin"                   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-    dateForm            = "2. Jan 2006"
-    dateFormFull        = "2. Jan 2006 15:04:05 EST"
-    cacheBuster         = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-    # Max 160 characters show in search results
-    description         = "My personal thoughts about Software Architecture, Security, Clean Code and lot of other things."
-    faviconFile         = "img/favicon.ico"
-    pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
-    pygmentsCodefences  = true
-    footerText          = ""                                # Text to show in footer (overrides default text)
-    fadeIn              = true                              # Turn on/off the fade-in effect
-    customCSS           = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
+# Theme https://github.com/cntrump/hugo-notepadium
+style = "dark"
+slogan = "IT-Security — Software Architecture — Clean Code"
 
-    showBlog            = true                              # Show Blog section on home page
-    showProjects        = true                              # Show Projects section on home page
-    projectColumns      = "3"                               # Choose "2" or "3" columns for projects section
-    placeHolderimg      = "/img/workday.jpg"                # For Projects without image
-    showAllPosts        = false                             # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
-    showLatest          = true                              # Show latest blog post summary
-    shareButtons        = true                              # On post pages, show share this social buttons
+# Theme https://github.com/keichi/vienna
 
-    # Share buttons
-    shareTwitter        = true
-    shareFacebook       = false
-    sharePinterest      = false
-    shareGooglePlus     = false
+# Theme https://github.com/geschke/hugo-tikva
+
+# Theme https://github.com/gyorb/hugo-dusk
+
+# Them https://github.com/salcan/BeyondNothing
+
+# Theme introduction
+blogHead            = "Das Weltraumschaf"               # Full name shows on blog post pages
+firstName           = "Weltraumschaf"                   # First name shows in introduction on main page
+tagLine             = "IT-Security — Software Architecture — Clean Code" # Appears after the introduction
+introHeight         = "large"                           # Input either 'medium' or 'large' or 'fullheight'
+themeStyle          = "dark"                            # Choose 'light' or 'dark'
+avatar              = "img/ich.jpg"                     # Path to image in static folder eg. img/avatar.png, or comment out to remove
+email               = "ich@weltraumschaf.de"            # Shows in contact section, or leave blank to omit
+localTime           = true                              # Show your current local time in contact section
+timeZone            = "Europe/Berlin"                   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+dateForm            = "2. Jan 2006"
+dateFormFull        = "2. Jan 2006 15:04:05 EST"
+cacheBuster         = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
+# Max 160 characters show in search results
+description         = "My personal thoughts about Software Architecture, Security, Clean Code and lot of other things."
+faviconFile         = "img/favicon.ico"
+pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
+pygmentsCodefences  = true
+footerText          = ""                                # Text to show in footer (overrides default text)
+fadeIn              = true                              # Turn on/off the fade-in effect
+customCSS           = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
+showBlog            = true                              # Show Blog section on home page
+showProjects        = true                              # Show Projects section on home page
+projectColumns      = "3"                               # Choose "2" or "3" columns for projects section
+placeHolderimg      = "/img/workday.jpg"                # For Projects without image
+showAllPosts        = false                             # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+showLatest          = true                              # Show latest blog post summary
+shareButtons        = true                              # On post pages, show share this social buttons
+# Share buttons
+shareTwitter        = true
+shareFacebook       = false
+sharePinterest      = false
+shareGooglePlus     = false
 
 # Social icons appear in introduction and contact section. Add as many more as you like.
 # Find icon names here: https://fontawesome.com/v4.7.0/icons/
 
 [[params.social]]
-    url  = "http://weltraumschaf.github.io/"
-    icon = "github"
+url  = "http://weltraumschaf.github.io/"
+icon = "github"
 
 [[params.social]]
-    url  = "https://twitter.com/Weltraumschaf"
-    icon = "twitter"
+url  = "https://twitter.com/Weltraumschaf"
+icon = "twitter"
 
 [[params.social]]
-    url  = "https://dev.to/weltraumschaf"
-    icon = "laptop"
+url  = "https://dev.to/weltraumschaf"
+icon = "laptop"
 
 [[params.social]]
-    url  = "https://stackoverflow.com/users/952722/weltraumschaf"
-    icon = "stack-overflow"
+url  = "https://stackoverflow.com/users/952722/weltraumschaf"
+icon = "stack-overflow"
 
 [[params.social]]
-    url  = "https://www.xing.com/profile/Sven_Strittmatter"
-    icon = "xing"
+url  = "https://www.xing.com/profile/Sven_Strittmatter"
+icon = "xing"
 
 [[params.social]]
-    url  = "https://de.linkedin.com/in/sven-strittmatter-53775121"
-    icon = "linkedin"
+url  = "https://de.linkedin.com/in/sven-strittmatter-53775121"
+icon = "linkedin"
 
 [[params.social]]
-    url  = "https://soundcloud.com/weltraumschaf"
-    icon = "soundcloud"
+url  = "https://soundcloud.com/weltraumschaf"
+icon = "soundcloud"
