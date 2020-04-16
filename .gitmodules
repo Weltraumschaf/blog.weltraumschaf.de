@@ -16,3 +16,6 @@
 [submodule "themes/hugo-dusk"]
 	path = themes/hugo-dusk
 	url = https://github.com/gyorb/hugo-dusk
+[submodule "themes/beyondnothing"]
+	path = themes/beyondnothing
+	url = https://github.com/salcan/BeyondNothing.git
