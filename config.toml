@@ -1,98 +1,157 @@
 # Docu of all options: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseurl = "https://blog.weltraumschaf.de/"
 languageCode = "en_US"
-title               = "Das Weltraumschaf"
-theme               = "introduction"
-# theme               = "hugo-notepadium"
-# theme               = "vienna"
-# theme               = "hugo-tikva"
-# theme               = "hugo-dusk"
-# theme               = "beyondnothing"
-enforce_ssl         = true
-builddrafts         = false     # Include pages with draft status of true
-canonifyurls        = true      # Turns relative urls into absolute urls
-disablePathToLower  = true
-enableEmoji         = true      # https://www.webpagefx.com/tools/emoji-cheat-sheet/
-enableGitInfo       = true
-enableRobotsTXT     = true
-# disqusshortname = "xxx"   # Enable Disqus for comments
-# googleAnalytics = "xxx"
+title = "Das Weltraumschaf"
+theme = "hugo-tikva"
+enforce_ssl = true
+# Exclude pages with draft status of true
+builddrafts = false
+# Turns relative urls into absolute urls
+canonifyurls = true
+disablePathToLower = true
+# https://www.webpagefx.com/tools/emoji-cheat-sheet/
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
 
+# Language setting of the site, for language configuration see
+#  https://gohugo.io/content-management/multilingual/
+# There are only a few strings which need to be translated, feel free to add more
+# languages.
+DefaultContentLanguage = "en"
+
+# Intresting themes:
+# https://github.com/cntrump/hugo-notepadium
+# https://github.com/keichi/vienna
+# https://github.com/gyorb/hugo-dusk
+# https://github.com/salcan/BeyondNothing
 
 [params]
-# Theme https://github.com/cntrump/hugo-notepadium
-style = "dark"
-slogan = "IT-Security — Software Architecture — Clean Code"
+    # Theme https://github.com/geschke/hugo-tikva
+    subtitle = "IT-Security — Software Architecture — Clean Code"
+    favicon = '/img/favicon.ico'
+    showDate = true
+    showNumberOfWords = true
 
-# Theme https://github.com/keichi/vienna
+[params.theme]
+#bootstrapTheme = 'bolt'
+#bootstrapTheme = 'bstrap'
+#bootstrapTheme = 'btcn'
+#bootstrapTheme = 'calabaza'
+#bootstrapTheme = 'cerulean'
+# fav: strand
+bootstrapTheme = 'cosmo'
+# bootstrapTheme = 'cyborg'
+# fav:
+# bootstrapTheme = 'darkly'
+# fav: strand
+# bootstrapTheme = 'flatly'
+# fav: strand
+# bootstrapTheme = 'hoff'
+# bootstrapTheme = 'journal'
+# fav: strand
+# bootstrapTheme = 'kdo_flatly'
+# bootstrapTheme = 'kdo2'
+# fav: strand
+# bootstrapTheme = 'kunsch'
+# bootstrapTheme = 'lumen'
+# Coole typo:
+# bootstrapTheme = 'lux'
+# bootstrapTheme = 'malibu'
+# bootstrapTheme = 'materia'
+# bootstrapTheme = 'minim'
+# fav: strand
+# bootstrapTheme = 'minty'
+# fav: strand
+# bootstrapTheme = 'pulse'
+# fav: strand
+# bootstrapTheme = 'signa'
+# bootstrapTheme = 'simplex'
+# bootstrapTheme = 'sketchy'
+# fav:
+# bootstrapTheme = 'slate_accessibility_ready'
+# bootstrapTheme = 'slate'
+# fav:
+# bootstrapTheme = 'solar'
+# bootstrapTheme = 'sonic'
+# bootstrapTheme = 'spacelab'
+# bootstrapTheme = 'united'
+# bootstrapTheme = 'yeti'
 
-# Theme https://github.com/geschke/hugo-tikva
+# [params.navbar]
+#     colorScheme = "navbar-light"
 
-# Theme https://github.com/gyorb/hugo-dusk
+[params.theme.header]
+    image = '/img/header_strand.jpg'
+    width = 940
+    height = 200
+    # image = '/img/header_shuttle_cockpit.jpg'
+    # width = 1500
+    # height = 500
+    displayHeaderText = true
 
-# Them https://github.com/salcan/BeyondNothing
+[menu]
 
-# Theme introduction
-blogHead            = "Das Weltraumschaf"               # Full name shows on blog post pages
-firstName           = "Weltraumschaf"                   # First name shows in introduction on main page
-tagLine             = "IT-Security — Software Architecture — Clean Code" # Appears after the introduction
-introHeight         = "large"                           # Input either 'medium' or 'large' or 'fullheight'
-themeStyle          = "dark"                            # Choose 'light' or 'dark'
-avatar              = "img/ich.jpg"                     # Path to image in static folder eg. img/avatar.png, or comment out to remove
-email               = "ich@weltraumschaf.de"            # Shows in contact section, or leave blank to omit
-localTime           = true                              # Show your current local time in contact section
-timeZone            = "Europe/Berlin"                   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-dateForm            = "2. Jan 2006"
-dateFormFull        = "2. Jan 2006 15:04:05 EST"
-cacheBuster         = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-# Max 160 characters show in search results
-description         = "My personal thoughts about Software Architecture, Security, Clean Code and lot of other things."
-faviconFile         = "img/favicon.ico"
-pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
-pygmentsCodefences  = true
-footerText          = ""                                # Text to show in footer (overrides default text)
-fadeIn              = true                              # Turn on/off the fade-in effect
-customCSS           = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
-showBlog            = true                              # Show Blog section on home page
-showProjects        = true                              # Show Projects section on home page
-projectColumns      = "3"                               # Choose "2" or "3" columns for projects section
-placeHolderimg      = "/img/workday.jpg"                # For Projects without image
-showAllPosts        = false                             # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
-showLatest          = true                              # Show latest blog post summary
-shareButtons        = true                              # On post pages, show share this social buttons
-# Share buttons
-shareTwitter        = true
-shareFacebook       = false
-sharePinterest      = false
-shareGooglePlus     = false
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
 
-# Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: https://fontawesome.com/v4.7.0/icons/
+[[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/blog/"
+    weight = 20
 
-[[params.social]]
-url  = "http://weltraumschaf.github.io/"
-icon = "github"
+[[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 30
 
-[[params.social]]
-url  = "https://twitter.com/Weltraumschaf"
-icon = "twitter"
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
 
-[[params.social]]
-url  = "https://dev.to/weltraumschaf"
-icon = "laptop"
+[[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
 
-[[params.social]]
-url  = "https://stackoverflow.com/users/952722/weltraumschaf"
-icon = "stack-overflow"
+[[menu.main]]
+    identifier = "impressum"
+    name = "Impressum"
+    url = "/impressum/"
+    weight = 60
 
-[[params.social]]
-url  = "https://www.xing.com/profile/Sven_Strittmatter"
-icon = "xing"
+# [[params.social]]
+# url  = "http://weltraumschaf.github.io/"
+# icon = "github"
 
-[[params.social]]
-url  = "https://de.linkedin.com/in/sven-strittmatter-53775121"
-icon = "linkedin"
+# [[params.social]]
+# url  = "https://twitter.com/Weltraumschaf"
+# icon = "twitter"
 
-[[params.social]]
-url  = "https://soundcloud.com/weltraumschaf"
-icon = "soundcloud"
+# [[params.social]]
+# url  = "https://dev.to/weltraumschaf"
+# icon = "laptop"
+
+# [[params.social]]
+# url  = "https://stackoverflow.com/users/952722/weltraumschaf"
+# icon = "stack-overflow"
+
+# [[params.social]]
+# url  = "https://www.xing.com/profile/Sven_Strittmatter"
+# icon = "xing"
+
+# [[params.social]]
+# url  = "https://de.linkedin.com/in/sven-strittmatter-53775121"
+# icon = "linkedin"
+
+# [[params.social]]
+# url  = "https://soundcloud.com/weltraumschaf"
+# icon = "soundcloud"

@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## Writing Compilers and Interpreters: A Software Engineering Approach
-
 I have bought a [Book][1] from [Ronald  Mak][2] about how to write compilers and
 interpreters. Interesting approach  is the software design view:  How to specify
 and  implement the  modules/components  language independent  as possible.  This

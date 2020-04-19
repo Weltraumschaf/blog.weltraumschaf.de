@@ -7,8 +7,6 @@ categories: ["OS"]
 authors: "Sven Strittmatter"
 ---
 
-## Debian and the outdated Ruby Gems
-
 [Debian][1] is in  my personal opinion the best Linux  server distribution ever!
 I've never used something  else. But one big drawback is that a  lot of stuff is
 really outdated: With PHP you have to  use backports. Java and Maven brings some

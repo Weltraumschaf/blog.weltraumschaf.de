@@ -7,8 +7,6 @@ categories: ["Miscellaneous"]
 authors: "Sven Strittmatter"
 ---
 
-## Keynes vs. Hayek
-
 If you  ever wondered what  this [Keynes][1] and [Hayek][2]  thing is, a  lot of
 economists talking about. Here are two excellent videos telling about.
 

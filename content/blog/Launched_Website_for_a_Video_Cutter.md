@@ -7,8 +7,6 @@ categories: ["Projects"]
 authors: "Sven Strittmatter"
 ---
 
-## Launched Website for a Video Cutter
-
 Some days  ago I launched  a new [website][1]. It’s  the portfolio of  my former
 neighbor.  He’s  a talented  digital  video  cutter  always searching  for  new
 interesting projects  to work on near  Stuttgart in Germany. For  this website I

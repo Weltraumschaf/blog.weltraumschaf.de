@@ -7,8 +7,6 @@ categories: ["Blog"]
 authors: "Sven Strittmatter"
 ---
 
-## Interim Move to Jekyll and GitHub
-
 Roundabout two years  ago I decided to  get rid of Wordpress and  the full stack
 of PHP and  MySQL. About my reasons  for this  decision I've blogged  here. As a
 result I decided  to write my own simple blog  solution: [Uberblog][1]. This was

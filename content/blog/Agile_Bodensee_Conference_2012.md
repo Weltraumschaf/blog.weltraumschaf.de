@@ -7,8 +7,6 @@ categories: ["Agile"]
 authors: "Sven Strittmatter"
 ---
 
-## Agile Bodensee Conference 2012
-
 My [brother][1] has  organized his first conference. It is  also the first local
 agile conference at  [Bodensee in Germany][2]. It is the  [Agile Bodensee][3] on
 28th of September.

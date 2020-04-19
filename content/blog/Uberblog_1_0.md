@@ -7,8 +7,6 @@ categories: ["Blog"]
 authors: "Sven Strittmatter"
 ---
 
-## Uberblog 1.0
-
 Two weeks  ago I  [anounced][1] that  I'll no  longer use  Wordpress but  a more
 simple self  programmed solution. Now I'm  at the point  that I can say:  I've a
 version with all features I need. The version 1.0.

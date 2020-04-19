@@ -2,12 +2,10 @@
 title: "Nice Resources For Learning Ruby"
 description: "Nice Resources For Learning Ruby."
 date: 2012-03-19T09:42:24+01:00
-tags: ["Programming", "Rubu"]
+tags: ["Programming", "Ruby"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
-
-## Nice Resources For Learning Ruby
 
 If you ever  wanted to start learning  Ruby the big question to  answer is: Where
 to star?  I recommend  [Learning Ruby][1]  from the  [Pragmatic Programmers][2].

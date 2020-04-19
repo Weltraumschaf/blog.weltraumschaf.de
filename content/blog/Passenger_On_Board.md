@@ -7,8 +7,6 @@ categories: ["Blog"]
 authors: "Sven Strittmatter"
 ---
 
-## Passenger On Board
-
 In my first  approach I was running  the [Sinatra][1] app for  the [REST][2] API
 of my blog (for ratings etc.) from  command line. This has the drawback that the
 HTTP daemon integrated in  Sinatra listens on a different port  than the rest of

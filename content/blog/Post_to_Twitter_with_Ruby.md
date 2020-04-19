@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## Post to Twitter with Ruby
-
 Just few  hours ago I  added the feature  that new blog  posts are posted  to my
 [Twitter  account][1]. With  the  [twitter  gem][2] only  a  few  lines of  code
 necessary:

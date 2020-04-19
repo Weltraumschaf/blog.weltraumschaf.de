@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## Parser and Image Generator for EBNF
-
 Some days ago I  searched for a tool which can  visualizes [EBNF][1] grammars. I
 don’t  care what  kind of  visualization: Desktop  tool or  a command  line tool
 which generates images, PDF  or such. The only tool I found  was a Windows tool.

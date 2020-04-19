@@ -7,8 +7,6 @@ categories: ["Blog"]
 authors: "Sven Strittmatter"
 ---
 
-## Only SSL access to my blog
-
 Some time ago I  configured my blog to serve both HTTP and  HTTPS. From now on I
 will redirect all  non-SSL requests permanently to HTTPS. The  reason is that no
 one  access  the login  page  without  SSL by  accident.  If  you encounter  any

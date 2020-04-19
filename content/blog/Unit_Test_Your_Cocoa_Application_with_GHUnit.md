@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## Unit Test Your Cocoa Application with GHUnit
-
 In the last years  I have good experiences with [Unit  testing][1]. It gives you
 more  safety  that  your  software  meets your  behavioral  requirements.  So  I
 searched for  some frameworks to  make tests for  my Cocoa application.  I found

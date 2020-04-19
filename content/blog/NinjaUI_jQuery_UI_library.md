@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## NinjaUI jQuery UI library
-
 Just  playing around  with  [NinjaUI][1]  for a  private  project.  It’s a  nice
 stylish UI plugin for [jQuery][2]. It’s  not that large and complex than [jQuery
 UI][3]. It has less feature and options  but in my opinion the better UI design.

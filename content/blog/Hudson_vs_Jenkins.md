@@ -7,8 +7,6 @@ categories: ["CI"]
 authors: "Sven Strittmatter"
 ---
 
-## Hudson vs. Jenkins
-
 Do you remember [Hudson  CI][1]? If you did some [CI][2] two  years ago then you
 know Hudson and you also know that  after the acquisition of Sun by Oracle there
 was  hassle  in  the  community.  End  of  story  was  that  the  lead  developer

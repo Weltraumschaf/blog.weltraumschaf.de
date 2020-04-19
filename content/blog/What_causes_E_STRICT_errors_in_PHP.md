@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## What causes E_STRICT errors in PHP
-
 Some months ago  this question came up on  my work. We asked our  self what kind
 of  errors causes  an _E_STRICT_  error. The  naive approach  was to  search the
 [php.net][1].  But  I  didn’t  find  anything about  that.  Yes  there  is  some

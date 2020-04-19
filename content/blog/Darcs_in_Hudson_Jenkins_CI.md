@@ -29,8 +29,8 @@ browsing.
 Todos for further versions are:
 
 - write more unittests
-	- DarcsSaxHandler/DarcsChangelogParser tests
-	- BrowserChooser
+  - DarcsSaxHandler/DarcsChangelogParser tests
+  - BrowserChooser
 - iput validation for code browsers URL
 - implement polling support
 - use org.jenkinsci.plugins as namespace

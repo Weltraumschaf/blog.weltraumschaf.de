@@ -7,8 +7,6 @@ categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
-## Recommended Books for learning Objective-C and Cocoa
-
 Since some  time I  keep busy  with learning [Objective-C][1]  to program  on my
 Mac. There are several  good resources in the web. But I like  to read books. So
 I find a very good book to  learn the concepts ob Objective-C. It's [Programming

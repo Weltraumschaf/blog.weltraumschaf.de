@@ -7,8 +7,6 @@ categories: ["Blog"]
 authors: "Sven Strittmatter"
 ---
 
-## Fuck Of Wordpress
-
 [Wordpress][1] was my first blog software.  I used it since roundabout six years
 now.  Writing an  own plugin  for my  blog was  one of  my first  steps learning
 [PHP][2]. After  my experiences with  Java 1.4 and MS  Visual C++ 6.0  from 2002
