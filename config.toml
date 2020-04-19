@@ -34,49 +34,21 @@ DefaultContentLanguage = "en"
     showNumberOfWords = true
 
 [params.theme]
-#bootstrapTheme = 'bolt'
-#bootstrapTheme = 'bstrap'
-#bootstrapTheme = 'btcn'
-#bootstrapTheme = 'calabaza'
-#bootstrapTheme = 'cerulean'
-# fav: strand
-bootstrapTheme = 'cosmo'
-# bootstrapTheme = 'cyborg'
-# fav:
+bootstrapTheme = 'bolt'
+# bootstrapTheme = 'btcn'
+# bootstrapTheme = 'calabaza'
+# bootstrapTheme = 'cosmo'
 # bootstrapTheme = 'darkly'
-# fav: strand
 # bootstrapTheme = 'flatly'
-# fav: strand
 # bootstrapTheme = 'hoff'
-# bootstrapTheme = 'journal'
-# fav: strand
 # bootstrapTheme = 'kdo_flatly'
-# bootstrapTheme = 'kdo2'
-# fav: strand
 # bootstrapTheme = 'kunsch'
-# bootstrapTheme = 'lumen'
-# Coole typo:
 # bootstrapTheme = 'lux'
-# bootstrapTheme = 'malibu'
-# bootstrapTheme = 'materia'
-# bootstrapTheme = 'minim'
-# fav: strand
 # bootstrapTheme = 'minty'
-# fav: strand
 # bootstrapTheme = 'pulse'
-# fav: strand
 # bootstrapTheme = 'signa'
-# bootstrapTheme = 'simplex'
-# bootstrapTheme = 'sketchy'
-# fav:
 # bootstrapTheme = 'slate_accessibility_ready'
-# bootstrapTheme = 'slate'
-# fav:
 # bootstrapTheme = 'solar'
-# bootstrapTheme = 'sonic'
-# bootstrapTheme = 'spacelab'
-# bootstrapTheme = 'united'
-# bootstrapTheme = 'yeti'
 
 # [params.navbar]
 #     colorScheme = "navbar-light"
