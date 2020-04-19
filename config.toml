@@ -23,8 +23,6 @@ DefaultContentLanguage = "en"
 # Intresting themes:
 # https://github.com/cntrump/hugo-notepadium
 # https://github.com/keichi/vienna
-# https://github.com/gyorb/hugo-dusk
-# https://github.com/salcan/BeyondNothing
 
 [params]
     # Theme https://github.com/geschke/hugo-tikva
@@ -34,7 +32,7 @@ DefaultContentLanguage = "en"
     showNumberOfWords = true
 
 [params.theme]
-bootstrapTheme = 'bolt'
+# bootstrapTheme = 'bolt'
 # bootstrapTheme = 'btcn'
 # bootstrapTheme = 'calabaza'
 # bootstrapTheme = 'cosmo'
