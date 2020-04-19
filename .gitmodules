@@ -1,9 +1,3 @@
-[submodule "themes/hugo-theme-iris"]
-	path = themes/hugo-theme-iris
-	url = https://github.com/peaceiris/hugo-theme-iris.git
-[submodule "themes/hugo.386"]
-	path = themes/hugo.386
-	url = https://gitlab.com/maxlefou/hugo.386
 [submodule "themes/hugo-notepadium"]
 	path = themes/hugo-notepadium
 	url = https://github.com/cntrump/hugo-notepadium.git
@@ -13,9 +7,3 @@
 [submodule "themes/hugo-tikva"]
 	path = themes/hugo-tikva
 	url = https://github.com/geschke/hugo-tikva
-[submodule "themes/hugo-dusk"]
-	path = themes/hugo-dusk
-	url = https://github.com/gyorb/hugo-dusk
-[submodule "themes/beyondnothing"]
-	path = themes/beyondnothing
-	url = https://github.com/salcan/BeyondNothing.git
