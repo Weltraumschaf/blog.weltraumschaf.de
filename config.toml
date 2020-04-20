@@ -26,7 +26,7 @@ DefaultContentLanguage = "en"
 
 [params]
     # Theme https://github.com/geschke/hugo-tikva
-    subtitle = "IT-Security — Software Architecture — Clean Code"
+    subtitle = "IT-Security / Software Architecture / Clean Code"
     favicon = '/img/favicon.ico'
     showDate = true
     showNumberOfWords = true
