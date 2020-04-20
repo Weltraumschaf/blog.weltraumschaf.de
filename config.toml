@@ -1,8 +1,9 @@
 # Docu of all options: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-baseurl = "https://blog.weltraumschaf.de/"
+baseURL = "https://blog.weltraumschaf.de/"
 languageCode = "en_US"
 title = "Das Weltraumschaf"
-theme = "hugo-tikva"
+theme = "hugo-notepadium"
+copyright = "© 2020 Sven Strittmatter"
 enforce_ssl = true
 # Exclude pages with draft status of true
 builddrafts = false
@@ -18,118 +19,37 @@ enableRobotsTXT = true
 #  https://gohugo.io/content-management/multilingual/
 # There are only a few strings which need to be translated, feel free to add more
 # languages.
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
 
-# Intresting themes:
-# https://github.com/cntrump/hugo-notepadium
-# https://github.com/keichi/vienna
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
 
 [params]
-    # Theme https://github.com/geschke/hugo-tikva
-    subtitle = "Security / Software Architecture / Clean Code"
-    favicon = '/img/favicon.ico'
-    showDate = true
-    showNumberOfWords = true
+style = "dark"
+dateFormat = " 2. January 2020"
+logo = "/img/ich.jpg"
+slogan = "Security / Software Architecture / Clean Code"
 
-[params.meta]
-    description = "My personal thoughts about security, software architecture and eveything else."
-    keywords = "security, software architecture, clean code"
-    author = "Svne Strittmatter"
-    "DC.Copyright" = "Sven Strittmatter"
+[params.nav]
+showCategories = false
+showTags = false
 
-[params.theme]
-# bootstrapTheme = 'bolt'
-# bootstrapTheme = 'btcn'
-# bootstrapTheme = 'calabaza'
-# bootstrapTheme = 'cosmo'
-# bootstrapTheme = 'darkly'
-# bootstrapTheme = 'flatly'
-bootstrapTheme = 'hoff'
-# bootstrapTheme = 'kdo_flatly'
-# bootstrapTheme = 'kunsch'
-# bootstrapTheme = 'lux'
-# bootstrapTheme = 'minty'
-# bootstrapTheme = 'pulse'
-# bootstrapTheme = 'signa'
-# bootstrapTheme = 'slate_accessibility_ready'
-# bootstrapTheme = 'solar'
+[[params.nav.custom]]
+title = "Projects"
+url = "/projects/"
 
-[params.theme.header]
-    image = '/img/header_strand.jpg'
-    width = 940
-    height = 200
-    displayHeaderText = true
+[[params.nav.custom]]
+title = "About me"
+url = "/about/"
 
-[params.sidebar]
-    enabled = true
-    style = 'right'
+[[params.nav.custom]]
+title = "Contact"
+url = "/contact/"
 
-[params.theme.subfooter]
-    enabled = true # Show the content below the footer
-    demoContent = '<div class="d-flex justify-content-center">Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>.</div>'
-
-[menu]
-
-[[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
-
-[[menu.main]]
-    identifier = "posts"
-    name = "Blog"
-    url = "/blog/"
-    weight = 20
-
-[[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 30
-
-[[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
-
-[[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 50
-
-[[menu.main]]
-    identifier = "impressum"
-    name = "Impressum"
-    url = "/impressum/"
-    weight = 60
-
-# [[params.social]]
-# url  = "http://weltraumschaf.github.io/"
-# icon = "github"
-
-# [[params.social]]
-# url  = "https://twitter.com/Weltraumschaf"
-# icon = "twitter"
-
-# [[params.social]]
-# url  = "https://dev.to/weltraumschaf"
-# icon = "laptop"
-
-# [[params.social]]
-# url  = "https://stackoverflow.com/users/952722/weltraumschaf"
-# icon = "stack-overflow"
-
-# [[params.social]]
-# url  = "https://www.xing.com/profile/Sven_Strittmatter"
-# icon = "xing"
-
-# [[params.social]]
-# url  = "https://de.linkedin.com/in/sven-strittmatter-53775121"
-# icon = "linkedin"
-
-# [[params.social]]
-# url  = "https://soundcloud.com/weltraumschaf"
-# icon = "soundcloud"
+[[params.nav.custom]]
+title = "Impressum"
+url = "/impressum/"
