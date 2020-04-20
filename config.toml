@@ -54,6 +54,10 @@ bootstrapTheme = 'hoff'
     height = 200
     displayHeaderText = true
 
+[params.sidebar]
+    enabled = true
+    style = 'right'
+
 [params.theme.subfooter]
     enabled = true # Show the content below the footer
     demoContent = '<div class="d-flex justify-content-center">Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-tikva">Tikva</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>.</div>'
