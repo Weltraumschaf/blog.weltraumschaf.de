@@ -26,10 +26,16 @@ DefaultContentLanguage = "en"
 
 [params]
     # Theme https://github.com/geschke/hugo-tikva
-    subtitle = "IT-Security / Software Architecture / Clean Code"
+    subtitle = "Security / Software Architecture / Clean Code"
     favicon = '/img/favicon.ico'
     showDate = true
     showNumberOfWords = true
+
+[params.meta]
+    description = "My personal thoughts about security, software architecture and eveything else."
+    keywords = "security, software architecture, clean code"
+    author = "Svne Strittmatter"
+    "DC.Copyright" = "Sven Strittmatter"
 
 [params.theme]
 # bootstrapTheme = 'bolt'
