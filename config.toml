@@ -33,6 +33,7 @@ style = "dark"
 dateFormat = " 2. January 2020"
 logo = "/img/ich.jpg"
 slogan = "Security / Software Architecture / Clean Code"
+fullRss = true
 
 [params.nav]
 showCategories = false
