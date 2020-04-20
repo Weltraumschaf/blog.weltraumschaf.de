@@ -48,9 +48,6 @@ bootstrapTheme = 'hoff'
 # bootstrapTheme = 'slate_accessibility_ready'
 # bootstrapTheme = 'solar'
 
-# [params.navbar]
-#     colorScheme = "navbar-light"
-
 [params.theme.header]
     image = '/img/header_strand.jpg'
     width = 940
