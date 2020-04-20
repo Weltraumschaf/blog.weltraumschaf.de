@@ -4,7 +4,7 @@ description: "Some words about Sven Strittmatter."
 date: 2018-04-23T09:08:11+02:00
 ---
 
-My name is Sven Strittmatter and I'm a software engineer home based in [Stuttgart (Germany)][1]. 2005 I've graduated as [Diplom-Ingenieur][2] for information technology at [Duale Hochschule Stuttgart][3].
+My name is Sven Strittmatter and I'm a software engineer home based in [Stuttgart (Germany)][1]. 2005 I've graduated as [Diplom-Ingenieur][2] (DH) for information technology at [Duale Hochschule Stuttgart][3].
 
 ## Some Words About Me
 
