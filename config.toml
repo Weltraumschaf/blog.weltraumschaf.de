@@ -36,7 +36,7 @@ slogan = "Security / Software Architecture / Clean Code"
 fullRss = true
 
 [params.nav]
-showCategories = false
+showCategories = true
 showTags = false
 
 [[params.nav.custom]]
