@@ -2,8 +2,8 @@
 title: "Launched Website for a Video Cutter"
 description: "Launched Website for a Video Cutter."
 date: 2011-04-23T09:42:24+01:00
-tags: ["Video", "Editing"]
-categories: ["Projects"]
+tags: ["Video", "Editing", "Project", "Web", "Design", "HTML", "CSS"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
