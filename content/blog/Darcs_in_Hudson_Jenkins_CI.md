@@ -2,8 +2,8 @@
 title: "Darcs in Hudson/Jenkins CI"
 description: "Darcs in Hudson/Jenkins CI."
 date: 2011-02-15T09:42:24+01:00
-tags: ["Jenkins", "CI"]
-categories: ["CI"]
+tags: ["Jenkins", "CI", "Tools", "Project"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 

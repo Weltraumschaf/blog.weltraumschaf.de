@@ -2,8 +2,8 @@
 title: "Hudson vs. Jenkins"
 description: "Hudson vs. Jenkins."
 date: 2012-03-21T09:42:24+01:00
-tags: ["Jenkins", "Hudson", "CI"]
-categories: ["CI"]
+tags: ["Jenkins", "Hudson", "CI", "Tools"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
