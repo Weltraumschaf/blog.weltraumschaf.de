@@ -2,7 +2,7 @@
 title: "Maven And Arbitrary Jar Files"
 description: "Maven And Arbitrary Jar Files."
 date: 2012-01-04T09:42:24+01:00
-tags: ["Programming", "Java", "Maven"]
+tags: ["Java", "Maven", "Tools"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

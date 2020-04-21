@@ -2,7 +2,7 @@
 title: "Parser and Image Generator for EBNF"
 description: "Parser and Image Generator for EBNF."
 date: 2011-10-02T09:42:24+01:00
-tags: ["Programming", "BNF", "Parser", "Lexer"]
+tags: ["Syntax", "Railroad", "Diagram", "BNF", "Parser", "Lexer"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

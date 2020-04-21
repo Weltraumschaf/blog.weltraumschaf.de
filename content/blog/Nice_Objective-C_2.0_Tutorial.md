@@ -2,7 +2,7 @@
 title: "Nice Objective-C 2.0 Tutorial"
 description: "Nice Objective-C 2.0 Tutorial."
 date: 2010-03-19T09:42:24+01:00
-tags: ["Programming", "Objective-C"]
+tags: ["macOS", "Objective-C"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

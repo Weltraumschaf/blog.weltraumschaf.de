@@ -2,7 +2,7 @@
 title: "All Web Developers Should Stop Doing This Immediately, Too"
 description: "All Web Developers Should Stop Doing This Immediately, Too."
 date: 2012-02-16T09:42:24+01:00
-tags: ["Programming", "Web"]
+tags: ["Web", "HTML", "CSS", "Performance"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

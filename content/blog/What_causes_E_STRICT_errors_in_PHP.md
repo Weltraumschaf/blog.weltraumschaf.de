@@ -2,7 +2,7 @@
 title: "What causes E_STRICT errors in PHP"
 description: "What causes E_STRICT errors in PHP."
 date: 2011-07-16T09:42:24+01:00
-tags: ["Programming", "PHP"]
+tags: ["PHP"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

@@ -2,7 +2,7 @@
 title: "Writing Compilers and Interpreters: A Software Engineering Approach"
 description: "Writing Compilers and Interpreters: A Software Engineering Approach."
 date: 2011-12-28T09:42:24+01:00
-tags: ["Programming", "Compiler"]
+tags: ["Compiler", "Interpreter", "Software Engineering"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

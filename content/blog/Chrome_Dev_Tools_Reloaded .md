@@ -2,7 +2,7 @@
 title: "Chrome Dev Tools Reloaded"
 description: "Chrome Dev Tools Reloaded."
 date: 2012-04-01T09:42:24+01:00
-tags: ["Programming", "Web", "Chrome"]
+tags: ["Web", "Chrome", "HTML", "CSS", "JavaScript", "Tools"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

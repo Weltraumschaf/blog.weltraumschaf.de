@@ -2,7 +2,7 @@
 title: "Nice Resources For Learning Ruby"
 description: "Nice Resources For Learning Ruby."
 date: 2012-03-19T09:42:24+01:00
-tags: ["Programming", "Ruby"]
+tags: ["Ruby"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

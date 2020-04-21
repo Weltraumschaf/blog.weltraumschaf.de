@@ -2,7 +2,7 @@
 title: "Post to Twitter with Ruby"
 description: "Post to Twitter with Ruby."
 date: 2012-03-23T09:42:24+01:00
-tags: ["Programming", "Ruby"]
+tags: ["Twitter", "API", "Ruby"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

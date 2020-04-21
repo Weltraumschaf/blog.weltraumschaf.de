@@ -2,7 +2,7 @@
 title: "NinjaUI jQuery UI library"
 description: "NinjaUI jQuery UI library."
 date: 2011-07-17T09:42:24+01:00
-tags: ["Programming", "JavaScript", "jQuery"]
+tags: ["Library", "JavaScript", "jQuery"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---

@@ -2,7 +2,7 @@
 title: "Recommended Books for learning Objective-C and Cocoa"
 description: "Recommended Books for learning Objective-C and Cocoa."
 date: 2010-03-20T09:42:24+01:00
-tags: ["Programming", "Objective-C"]
+tags: ["Cocoa", "Objective-C", "macOS", "Books"]
 categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
