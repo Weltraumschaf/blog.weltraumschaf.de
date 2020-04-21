@@ -2,8 +2,8 @@
 title: "Debian and the outdated Ruby Gems"
 description: "Debian and the outdated Ruby Gems."
 date: 2012-03-23T09:42:24+01:00
-tags: ["Debian", "Ruby", "Gems"]
-categories: ["OS"]
+tags: ["Debian", "Ruby", "Gems", "Project"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
