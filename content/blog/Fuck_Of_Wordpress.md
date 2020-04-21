@@ -2,8 +2,8 @@
 title: "Fuck Of Wordpress"
 description: "Fuck Of Wordpress."
 date: 2012-03-18T09:42:24+01:00
-tags: ["Wordpress", "Blog"]
-categories: ["Blog"]
+tags: ["Wordpress", "Blog", "Ruby", "Project"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 

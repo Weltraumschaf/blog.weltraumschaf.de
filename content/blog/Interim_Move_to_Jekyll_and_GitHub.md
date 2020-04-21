@@ -2,8 +2,8 @@
 title: "Interim Move to Jekyll and GitHub"
 description: "Interim Move to Jekyll and GitHub."
 date: 2018-02-16T09:44:06+01:00
-tags: ["Blog", "Jekyll", "GitHub"]
-categories: ["Blog"]
+tags: ["Blog", "Jekyll", "GitHub", "Project"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 

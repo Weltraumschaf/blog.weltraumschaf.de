@@ -2,8 +2,8 @@
 title: "Uberblog 1.0"
 description: "Uberblog 1.0."
 date: 2012-04-01T09:42:24+01:00
-tags: ["Blog", "Programming"]
-categories: ["Blog"]
+tags: ["Blog", "Ruby", "Project"]
+categories: ["Programming"]
 authors: "Sven Strittmatter"
 ---
 
