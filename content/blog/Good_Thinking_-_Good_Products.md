@@ -2,7 +2,7 @@
 title: "Good Thinking – Good Products"
 description: "Good Thinking – Good Products."
 date: 2010-04-09T09:42:24+01:00
-tags: ["Agile"]
+tags: ["Lean", "Kaizen"]
 categories: ["Agile"]
 authors: "Sven Strittmatter"
 ---
