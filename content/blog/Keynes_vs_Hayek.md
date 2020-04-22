@@ -14,11 +14,11 @@ economists talking about. Here are two excellent videos telling about.
 
 ### "Fear the Boom and Bust" a Hayek vs. Keynes Rap Anthem
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/d0nERTFo-Sk" frameborder="0" allowfullscreen></iframe>
+{{< youtube d0nERTFo-Sk >}}
 
 ### Fight of the Century: Keynes vs. Hayek Round Two
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/GTQnarzmTOc" frameborder="0" allowfullscreen></iframe>
+{{< youtube GTQnarzmTOc >}}
 
 [1]: http://en.wikipedia.org/wiki/John_Maynard_Keynes
 [2]: http://en.wikipedia.org/wiki/Friedrich_Hayek

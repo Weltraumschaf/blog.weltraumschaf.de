@@ -18,7 +18,7 @@ Are  you using  [Firebug][1]  or [Venkman][2]?  Did you  ever  tried the  Chrome
 developer tools?  If your answers  were yes and no  you should watch  this video
 from Google IO 2011 about the Chrome developer tools:
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/N8SS-rUEZPg" frameborder="0" allowfullscreen></iframe>
+{{< youtube N8SS-rUEZPg >}}
 
 If your answers were no and no  you should consider watching the video, too. And
 you should think  about better ways than sprinkling  `alert()` all over
