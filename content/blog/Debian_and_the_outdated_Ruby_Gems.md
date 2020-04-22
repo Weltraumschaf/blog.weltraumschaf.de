@@ -18,7 +18,7 @@ really outdated: With PHP you have to  use backports. Java and Maven brings some
 hassle, too. And now I realized the same  problem with Ruby Gems. But there is a
 solution as described [here][2] (german blog post).
 
-By  default  Debian  disables  the <kbd>gem  update  --system</kbd>  to  prevent
+By  default  Debian  disables  the `gem  update  --system`  to  prevent
 circumventing  the Debian  packet management  system. If  you need  a newer  Gem
 version you can install the [rubygems-update][3]:
 

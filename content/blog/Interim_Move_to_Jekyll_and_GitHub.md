@@ -24,7 +24,7 @@ it's CPAN. I don't want to  bash these languages and dependency management tools
 to much. But they are not really  convenient. You need to have special knowledge
 and you  have to  dig deep inside  to get  it up and  running in a  reliable way.
 That's a problem if you only want  to hack together some scripts, and then years
-later  you need  to reinstall  them. So  I decided  to rewrite  Uberblog with  a
+later you need to reinstall them. So I decided to rewrite  [Uberblog][1] with  a
 language which  compiles into a self contained binary. So a enduser  who want to
 use  the tool  do  not need  to  tinker around  with an  environment  he is  not
 familiar with.
