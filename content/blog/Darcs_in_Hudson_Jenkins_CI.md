@@ -1,19 +1,21 @@
 ---
-title: "Darcs in Hudson/Jenkins CI"
-description: "Darcs in Hudson/Jenkins CI."
+title: Darcs in Hudson/Jenkins CI
+description: Darcs in Hudson/Jenkins CI.
 date: 2011-02-15T09:42:24+01:00
-tags: ["Jenkins", "CI", "Tools", "Project"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Jenkins
+  - CI
+  - Tools
+  - Project
+categories: Programming
+authors: Sven Strittmatter
 ---
-
-## Darcs in Hudson/Jenkins CI
 
 At [work][1] we’re using heavily  the [DVCS][2] [Darcs][3]. Beyond dispute Darcs
 is in my opinion  a good and suitable workhorse. Ok, it’s not  that hip like Git
 is. But  the biggest  drawback is the  lack of integration  in other  tools like
-IDEs,  issuetrackers, build  tools etc.  There is  also no  SCM integration  for
-Hudson/[Jenkins][4] continious  integration server,  which we’re using  at work,
+IDEs, issue trackers, build  tools etc.  There is  also no  SCM integration  for
+Hudson/[Jenkins][4] continuous  integration server,  which we’re using  at work,
 [too][5].
 
 Long time I were complaining about this  bad integration like others, too. Now I
@@ -23,25 +25,25 @@ SCM plugin][6] for the Jenkins CI.
 The plugin  is in a stage  it still works and  I would call it  an alpha release
 (0.3.1). You  can watch  the project  status [here][7].  It implements  the base
 functionality for  checking out  a Darcs  repository and  tracks the  patches as
-build changesets.  Also it integrates  [Darcsweb][8] and [Darcsden][9]  for code
+build change sets. Also it integrates  [Darcsweb][8] and [Darcsden][9]  for code
 browsing.
 
 Todos for further versions are:
 
-- write more unittests
+- write more unit tests
   - DarcsSaxHandler/DarcsChangelogParser tests
   - BrowserChooser
-- iput validation for code browsers URL
+- input validation for code browsers URL
 - implement polling support
-- use org.jenkinsci.plugins as namespace
+- use `org.jenkinsci.plugins` as namespace
 - write more javadoc
-- ipmroving the changeset index view
+- improving the change set index view
 
 If you want to join the project you can fork me on [Github][6].
 
 Many thanks  to [Rob  Petti][10], [Jesse Farinacci][11],  the developers  of the
 [Bazaar][12], [TFS][13],  [Git][14], [SVN][15]  and [Perforce][16]  plugins. And
-last but  not least all  in #darcs and #jenkins  IRC channels on  freenode which
+last but  not least all in `#darcs` and `#jenkins` IRC channels on  freenode which
 helped me with good advices developing this plugin.
 
 [1]: http://blog.kwick.de/uber-uns/

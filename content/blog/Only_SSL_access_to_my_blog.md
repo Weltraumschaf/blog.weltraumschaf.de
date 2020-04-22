@@ -1,10 +1,13 @@
 ---
-title: "Only SSL access to my blog"
-description: "Only SSL access to my blog."
+title: Only SSL access to my blog
+description: Only SSL access to my blog.
 date: 2011-12-30T09:42:24+01:00
-tags: ["SSL", "TLS", "Blog"]
-categories: ["Security"]
-authors: "Sven Strittmatter"
+tags:
+  - SSL
+  - TLS
+  - Blog
+categories: Security
+authors: Sven Strittmatter
 ---
 
 Some time ago I  configured my blog to serve both HTTP and  HTTPS. From now on I

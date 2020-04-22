@@ -1,10 +1,15 @@
 ---
-title: "Agile Bodensee Conference 2012"
-description: "Agile Bodensee Conference 2012."
+title: Agile Bodensee Conference 2012
+description: Agile Bodensee Conference 2012.
 date: 2014-11-24T09:42:24+01:00
-tags: ["Scrum", "Kanban", "Lean", "Bodensee", "Conference"]
-categories: ["Agile"]
-authors: "Sven Strittmatter"
+tags:
+  - Scrum
+  - Kanban
+  - Lean
+  - Bodensee
+  - Conference
+categories: Agile
+authors: Sven Strittmatter
 ---
 
 My [brother][1] has  organized his first conference. It is  also the first local

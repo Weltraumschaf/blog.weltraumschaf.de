@@ -1,10 +1,14 @@
 ---
-title: "Debian and the outdated Ruby Gems"
-description: "Debian and the outdated Ruby Gems."
+title: Debian and the Outdated Ruby Gems
+description: Debian and the outdated Ruby Gems.
 date: 2012-03-23T09:42:24+01:00
-tags: ["Debian", "Ruby", "Gems", "Project"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Debian
+  - Ruby
+  - Gems
+  - Project
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 [Debian][1] is in  my personal opinion the best Linux  server distribution ever!

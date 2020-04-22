@@ -1,10 +1,13 @@
 ---
-title: "Plugins To Harden Your WordPress"
-description: "Plugins To Harden Your WordPress."
+title: Plugins To Harden Your WordPress
+description: Plugins To Harden Your WordPress.
 date: 2011-12-28T09:42:24+01:00
-tags: ["Wordpress", "Security", "Plugins"]
-categories: ["Security"]
-authors: "Sven Strittmatter"
+tags:
+  - Wordpress
+  - Security
+  - Plugins
+categories: Security
+authors: Sven Strittmatter
 ---
 
 Just stumbled  over a blog post  with a collection of  [16 WordPress plugins][1]

@@ -1,10 +1,14 @@
 ---
-title: "Interim Move to Jekyll and GitHub"
-description: "Interim Move to Jekyll and GitHub."
+title: Interim Move to Jekyll and GitHub
+description: Interim Move to Jekyll and GitHub.
 date: 2018-02-16T09:44:06+01:00
-tags: ["Blog", "Jekyll", "GitHub", "Project"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Blog
+  - Jekyll
+  - GitHub
+  - Project
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 Roundabout two years  ago I decided to  get rid of Wordpress and  the full stack
@@ -20,7 +24,7 @@ to much. But they are not really  convenient. You need to have special knowledge
 and you  have to  dig deep inside  to get  it up and  running in a  reliable way.
 That's a problem if you only want  to hack together some scripts, and then years
 later  you need  to reinstall  them. So  I decided  to rewrite  Uberblog with  a
-language which  compiles into a self conatined binary. So a enduser  who want to
+language which  compiles into a self contained binary. So a enduser  who want to
 use  the tool  do  not need  to  tinker around  with an  environment  he is  not
 familiar with.
 

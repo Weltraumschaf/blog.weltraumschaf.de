@@ -1,10 +1,12 @@
 ---
-title: "Good Thinking – Good Products"
-description: "Good Thinking – Good Products."
+title: Good Thinking – Good Products
+description: Good Thinking – Good Products.
 date: 2010-04-09T09:42:24+01:00
-tags: ["Lean", "Kaizen"]
-categories: ["Agile"]
-authors: "Sven Strittmatter"
+tags:
+  - Lean
+  - Kaizen
+categories: Agile
+authors: Sven Strittmatter
 ---
 
 > The  Toyota Way has two  main pillars: continuous improvement  and respect for
@@ -18,4 +20,4 @@ authors: "Sven Strittmatter"
 > continuous improvement.  The root of the  Toyota Way is to  be dissatisfied with
 > the status quo; you have to ask constantly, “Why are we doing this?”
 
-_Toyota CEO Katsuaki Watanabe (from “Scaling Lean and Agile Development”)_
+––_Toyota CEO Katsuaki Watanabe (from “Scaling Lean and Agile Development”)_

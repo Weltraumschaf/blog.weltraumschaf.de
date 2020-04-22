@@ -1,11 +1,16 @@
 ---
-title: "Writing Compilers and Interpreters: A Software Engineering Approach"
-description: "Writing Compilers and Interpreters: A Software Engineering Approach."
+title: Writing Compilers and Interpreters
+description: Book about a software engineering approach to write compilers and interpreters.
 date: 2011-12-28T09:42:24+01:00
-tags: ["Compiler", "Interpreter", "Software Engineering"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Compiler
+  - Interpreter
+  - Software Engineering
+categories: Programming
+authors: Sven Strittmatter
 ---
+
+## A Software Engineering Approach
 
 I have bought a [Book][1] from [Ronald  Mak][2] about how to write compilers and
 interpreters. Interesting approach  is the software design view:  How to specify

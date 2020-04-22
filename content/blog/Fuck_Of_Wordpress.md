@@ -1,10 +1,14 @@
 ---
-title: "Fuck Of Wordpress"
-description: "Fuck Of Wordpress."
+title: Fuck Of Wordpress
+description: Fuck Of Wordpress.
 date: 2012-03-18T09:42:24+01:00
-tags: ["Wordpress", "Blog", "Ruby", "Project"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Wordpress
+  - Blog
+  - Ruby
+  - Project
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 [Wordpress][1] was my first blog software.  I used it since roundabout six years
@@ -31,7 +35,7 @@ which generates  static HTML files  from Markdown  files. Each Markdown  file is
 one blog  post. Added some HTML  and CSS and all  of that stored into  a [GitHub
 Repo][4]. On the server  side there are only static files  served, a crontab job
 pulls each  hour the Git  repo and runs the  publish script which  generates the
-static content. Voila, here it is my ultra fast uberblog!
+static content. Voila, here it is my ultra fast [Uberblog][4]!
 
 [1]: http://wordpress.org/
 [2]: http://php.net/

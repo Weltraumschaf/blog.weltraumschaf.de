@@ -1,10 +1,11 @@
 ---
-title: "Keynes vs. Hayek"
-description: "Keynes vs. Hayek."
+title: Keynes vs. Hayek
+description: Keynes vs. Hayek.
 date: 2012-03-25T09:42:24+01:00
-tags: ["Economics"]
-categories: ["Miscellaneous"]
-authors: "Sven Strittmatter"
+tags:
+  - Economics
+categories: Miscellaneous
+authors: Sven Strittmatter
 ---
 
 If you  ever wondered what  this [Keynes][1] and [Hayek][2]  thing is, a  lot of

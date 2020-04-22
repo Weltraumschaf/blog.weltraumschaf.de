@@ -1,10 +1,13 @@
 ---
-title: "Passenger On Board"
-description: "Passenger On Board."
+title: Passenger On Board
+description: Passenger On Board.
 date: 2012-04-07T09:42:24+01:00
-tags: ["Blog", "Ruby", "Passenger"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Blog
+  - Ruby
+  - Passenger
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 In my first  approach I was running  the [Sinatra][1] app for  the [REST][2] API

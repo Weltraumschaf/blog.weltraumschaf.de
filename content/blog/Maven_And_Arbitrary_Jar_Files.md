@@ -1,10 +1,13 @@
 ---
-title: "Maven And Arbitrary Jar Files"
-description: "Maven And Arbitrary Jar Files."
+title: Maven And Arbitrary Jar Files
+description: Maven And Arbitrary Jar Files.
 date: 2012-01-04T09:42:24+01:00
-tags: ["Java", "Maven", "Tools"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Java
+  - Maven
+  - Tools
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 Since  I’m  coding  sometimes  with  Java   I  also  use  [Maven][1]  to  manage

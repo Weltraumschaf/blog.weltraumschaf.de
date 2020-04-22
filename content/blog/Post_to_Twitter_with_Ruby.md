@@ -1,10 +1,13 @@
 ---
-title: "Post to Twitter with Ruby"
-description: "Post to Twitter with Ruby."
+title: Post to Twitter with Ruby
+description: Post to Twitter with Ruby.
 date: 2012-03-23T09:42:24+01:00
-tags: ["Twitter", "API", "Ruby"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Twitter
+  - API
+  - Ruby
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 Just few  hours ago I  added the feature  that new blog  posts are posted  to my

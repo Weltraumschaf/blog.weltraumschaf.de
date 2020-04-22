@@ -1,10 +1,14 @@
 ---
-title: "Hudson vs. Jenkins"
-description: "Hudson vs. Jenkins."
+title: Hudson vs. Jenkins
+description: Hudson vs. Jenkins.
 date: 2012-03-21T09:42:24+01:00
-tags: ["Jenkins", "Hudson", "CI", "Tools"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Jenkins
+  - Hudson
+  - CI
+  - Tools
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 Do you remember [Hudson  CI][1]? If you did some [CI][2] two  years ago then you

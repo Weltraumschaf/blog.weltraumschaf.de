@@ -1,10 +1,16 @@
 ---
-title: "Parser and Image Generator for EBNF"
-description: "Parser and Image Generator for EBNF."
+title: Parser and Image Generator for EBNF
+description: Parser and Image Generator for EBNF.
 date: 2011-10-02T09:42:24+01:00
-tags: ["Syntax", "Railroad", "Diagram", "BNF", "Parser", "Lexer"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Syntax
+  - Railroad
+  - Diagram
+  - BNF
+  - Parser
+  - Lexer
+categories: Programming
+authors: Sven Strittmatter
 ---
 
 Some days ago I  searched for a tool which can  visualizes [EBNF][1] grammars. I

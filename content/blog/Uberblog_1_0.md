@@ -1,13 +1,16 @@
 ---
-title: "Uberblog 1.0"
-description: "Uberblog 1.0."
+title: Uberblog 1.0
+description: Uberblog 1.0.
 date: 2012-04-01T09:42:24+01:00
-tags: ["Blog", "Ruby", "Project"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Blog
+  - Ruby
+  - Project
+categories: Programming
+authors: Sven Strittmatter
 ---
 
-Two weeks  ago I  [anounced][1] that  I'll no  longer use  Wordpress but  a more
+Two weeks  ago I [announced][1] that  I'll no  longer use  Wordpress but  a more
 simple self  programmed solution. Now I'm  at the point  that I can say:  I've a
 version with all features I need. The version 1.0.
 
@@ -29,7 +32,7 @@ Reaching  point three  I  asked my  self:  Why not  creating  the HTML  websites
 periodically and skip all  three steps? For me it was the price  worth to do not
 have any "social" functionality like rating or comments in the first step.
 
-### So, where's the meat?
+### So, Where's the Meat?
 
 What  is my  architecture?  It is  not  a full  blown LAMP  stack.  There is  no
 database.  The  content  is  stored  in  [Markdown][2]  files  inside  the  blog
@@ -45,7 +48,7 @@ simple, indeed. But there are some additions:
 - pagination between posts (previous/next)
 - versions of the markdown content I got for free by Git
 
-### And the social stuff?
+### And the Social Stuff?
 
 I mentioned above  that I accepted that  I will not have ratings  or comments in
 my blog  solution. Also I  mentioned there is no  database. That's both  not one
