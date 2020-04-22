@@ -1,5 +1,5 @@
 ---
-title: "KAPIT"
+title: KAPIT
 date: 2018-04-23T09:08:11+02:00
 ---
 

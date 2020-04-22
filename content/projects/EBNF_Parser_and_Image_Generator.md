@@ -1,5 +1,5 @@
 ---
-title: "EBNF Parser and Image Generator"
+title: EBNF Parser and Image Generator
 date: 2018-04-23T09:08:11+02:00
 ---
 

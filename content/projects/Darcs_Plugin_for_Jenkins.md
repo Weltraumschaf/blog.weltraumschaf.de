@@ -1,5 +1,5 @@
 ---
-title: "Darcs Plugin for Jenkins"
+title: Darcs Plugin for Jenkins
 date: 2018-04-23T09:08:11+02:00
 ---
 
