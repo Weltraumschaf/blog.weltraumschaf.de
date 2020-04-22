@@ -7,7 +7,8 @@ tags:
   - Jekyll
   - GitHub
   - Project
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

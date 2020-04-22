@@ -9,7 +9,8 @@ tags:
   - BNF
   - Parser
   - Lexer
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

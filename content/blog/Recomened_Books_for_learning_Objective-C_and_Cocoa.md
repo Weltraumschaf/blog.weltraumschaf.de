@@ -7,7 +7,8 @@ tags:
   - Objective-C
   - macOS
   - Books
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

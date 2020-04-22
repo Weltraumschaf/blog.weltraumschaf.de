@@ -7,7 +7,8 @@ tags:
   - Ruby
   - Gems
   - Project
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

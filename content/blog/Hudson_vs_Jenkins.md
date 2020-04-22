@@ -7,7 +7,8 @@ tags:
   - Hudson
   - CI
   - Tools
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

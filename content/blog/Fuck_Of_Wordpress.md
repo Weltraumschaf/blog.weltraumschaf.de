@@ -7,7 +7,8 @@ tags:
   - Blog
   - Ruby
   - Project
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

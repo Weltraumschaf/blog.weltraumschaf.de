@@ -6,7 +6,8 @@ tags:
   - SSL
   - TLS
   - Blog
-categories: Security
+categories:
+  - Security
 authors: Sven Strittmatter
 ---
 

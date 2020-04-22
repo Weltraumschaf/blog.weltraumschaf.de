@@ -6,7 +6,8 @@ tags:
   - Compiler
   - Interpreter
   - Software Engineering
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

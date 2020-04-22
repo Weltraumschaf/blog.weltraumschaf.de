@@ -10,7 +10,8 @@ tags:
   - Design
   - HTML
   - CSS
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

@@ -7,7 +7,8 @@ tags:
   - CI
   - Tools
   - Project
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

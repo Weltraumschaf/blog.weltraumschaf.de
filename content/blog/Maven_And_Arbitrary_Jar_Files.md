@@ -6,7 +6,8 @@ tags:
   - Java
   - Maven
   - Tools
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

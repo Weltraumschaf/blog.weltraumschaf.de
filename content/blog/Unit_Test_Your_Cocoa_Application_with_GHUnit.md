@@ -8,7 +8,8 @@ tags:
   - Cocoa
   - macOS
   - Objective-C
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

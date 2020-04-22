@@ -7,7 +7,8 @@ tags:
   - HTML
   - CSS
   - Performance
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

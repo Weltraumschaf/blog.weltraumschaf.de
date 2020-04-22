@@ -6,7 +6,8 @@ tags:
   - Blog
   - Ruby
   - Passenger
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

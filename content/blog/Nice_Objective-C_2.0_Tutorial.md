@@ -5,7 +5,8 @@ date: 2010-03-19T09:42:24+01:00
 tags:
   - macOS
   - Objective-C
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

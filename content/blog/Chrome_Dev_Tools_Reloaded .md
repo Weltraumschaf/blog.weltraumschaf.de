@@ -9,7 +9,8 @@ tags:
   - CSS
   - JavaScript
   - Tools
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

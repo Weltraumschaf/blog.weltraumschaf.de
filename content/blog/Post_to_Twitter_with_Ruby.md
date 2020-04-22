@@ -6,7 +6,8 @@ tags:
   - Twitter
   - API
   - Ruby
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

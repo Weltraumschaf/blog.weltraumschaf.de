@@ -6,7 +6,8 @@ tags:
   - Library
   - JavaScript
   - jQuery
-categories: Programming
+categories:
+  - Programming
 authors: Sven Strittmatter
 ---
 

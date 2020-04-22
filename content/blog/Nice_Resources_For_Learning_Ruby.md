@@ -2,9 +2,11 @@
 title: "Nice Resources For Learning Ruby"
 description: "Nice Resources For Learning Ruby."
 date: 2012-03-19T09:42:24+01:00
-tags: ["Ruby"]
-categories: ["Programming"]
-authors: "Sven Strittmatter"
+tags:
+  - Ruby
+categories:
+  - Programming
+authors: Sven Strittmatter
 ---
 
 If you ever  wanted to start learning  Ruby the big question to  answer is: Where

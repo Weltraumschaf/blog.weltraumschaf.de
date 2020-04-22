@@ -6,7 +6,8 @@ tags:
   - Wordpress
   - Security
   - Plugins
-categories: Security
+categories:
+  - Security
 authors: Sven Strittmatter
 ---
 

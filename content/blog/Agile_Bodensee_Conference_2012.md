@@ -8,7 +8,8 @@ tags:
   - Lean
   - Bodensee
   - Conference
-categories: Agile
+categories:
+  - Agile
 authors: Sven Strittmatter
 ---
 

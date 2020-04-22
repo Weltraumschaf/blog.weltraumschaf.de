@@ -4,7 +4,8 @@ description: Nice talk about failure modes in Scrum from Østergaard.
 date: 2010-03-18T09:42:24+01:00
 tags:
   - Scrum
-categories: Agile
+categories:
+  - Agile
 authors: Sven Strittmatter
 ---
 

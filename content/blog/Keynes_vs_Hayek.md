@@ -4,7 +4,8 @@ description: Keynes vs. Hayek.
 date: 2012-03-25T09:42:24+01:00
 tags:
   - Economics
-categories: Miscellaneous
+categories:
+  - Miscellaneous
 authors: Sven Strittmatter
 ---
 
