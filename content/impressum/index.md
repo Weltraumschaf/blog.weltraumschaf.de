@@ -9,4 +9,4 @@ Wollen Sie mehr Informationen über diese Domain, dann können Sie diese bei der
 
 Alles auf dieser Website wird unter der [Beer-Ware License](/the-beer-ware-license.txt) veröffentlicht, sofern nichts anderes angegeben ist.
 
-[denic]:    http://www.denic.de/
+[denic]: http://www.denic.de/
