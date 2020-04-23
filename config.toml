@@ -31,7 +31,7 @@ unsafe = true  # enable raw HTML in Markdown
 [params]
 style = "dark"
 dateFormat = " 2. January 2006"
-logo = "/img/ich.jpg"
+logo = "/img/avatar.jpg"
 slogan = "Security / Software Architecture / Clean Code"
 fullRss = true
 
