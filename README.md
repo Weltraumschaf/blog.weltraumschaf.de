@@ -1,5 +1,7 @@
 # This is the Weltraumschaf Blog
 
+![This project is actively maintained!](https://img.shields.io/badge/Development-active-green?style=for-the-badge)
+
 ## DISCONINUED!
 
 This repository is discontinued and merged into <https://github.com/Weltraumschaf/www.weltraumschaf.de>.
