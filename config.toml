@@ -1,6 +1,6 @@
 # Docu of all options: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "https://blog.weltraumschaf.de/"
-languageCode = "en_US"
+languageCode = "en-us"
 title = "Das Weltraumschaf"
 theme = "hugo-notepadium"
 copyright = "© 2020 Sven Strittmatter"
