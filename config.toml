@@ -3,7 +3,7 @@ baseURL = "https://blog.weltraumschaf.de/"
 languageCode = "en-us"
 title = "Das Weltraumschaf"
 theme = "hugo-notepadium"
-copyright = "© 2020 Sven Strittmatter"
+copyright = "<a href='https://www.weltraumschaf.de/impressum.html'>Impressum / Contact</a> – © 2020 Sven Strittmatter"
 enforce_ssl = true
 # Exclude pages with draft status of true
 builddrafts = false
@@ -46,11 +46,3 @@ url = "/projects/"
 [[params.nav.custom]]
 title = "About me"
 url = "/about/"
-
-[[params.nav.custom]]
-title = "Contact"
-url = "/contact/"
-
-[[params.nav.custom]]
-title = "Impressum"
-url = "/impressum/"
