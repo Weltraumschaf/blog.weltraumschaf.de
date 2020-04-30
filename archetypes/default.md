@@ -12,6 +12,7 @@ comments: false
 justify: false  # text-align: justify;
 single: false  # display as a single page, hide navigation on bottom, like as about page.
 license: "THE BEER-WARE LICENSE"  # CC License
+authors: Sven Strittmatter
 draft: true
 ---
 
