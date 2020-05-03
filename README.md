@@ -9,3 +9,7 @@ The blog is based on [Hugo](https://gohugo.io/).
 - run it local `hugo serves`
 - create a new blog post `hugo new post/the-title.md`
 - generate the static site `hugo` (will be generated in directory `public`)
+
+## Some Useful Resources
+
+- [How to capitalize titles](https://capitalizemytitle.com/#)
