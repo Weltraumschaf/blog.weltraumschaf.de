@@ -6,6 +6,7 @@ tags:
   - Scrum
 categories:
   - Agile
+license: 'Published under the <a href="https://www.weltraumschaf.de/the-beer-ware-license.txt">THE BEER-WARE LICENSE</a>.'
 authors: Sven Strittmatter
 ---
 
