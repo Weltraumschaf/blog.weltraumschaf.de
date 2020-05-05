@@ -25,7 +25,7 @@ Whenever you run a server in the wild wild web you should harden your SSHd setup
 ### What I Use to Harden SSHd
 
 1. Change the TCP port SSHd listens: This detains the most script kiddies or basic scans.
-2. Install [fail2ban](https://www.fail2ban.org/): This wards you from brute force or dictionary attacks.
+2. Install [fail2ban][fail2ban]: This wards you from brute force or dictionary attacks.
 3. Configure SSHd right.
 
 All the examples in this post are based on [Debian Buster](https://www.debian.org/releases/stable/index.de.html) and [Ansible 2.9](https://www.ansible.com/).
@@ -75,11 +75,9 @@ This approach implies that you run your "init" playbook not via your inventory b
     -e "ansible_ssh_port=22"
 ```
 
----
-
-- <https://infosec.mozilla.org/guidelines/openssh.html>
-
 ### fail2ban Jail Configuration
+
+Next step is to install and configure [fail2ban][fail2ban]. This is a simple tool which refuses further connections on detection of brute force. It comes with a large example configuration located at `/etc/fail2ban/jail.conf` with lot of explanatory comments. One important point is that you must place your custom configuration at `/etc/fail2ban/jail.local`. Editing the default file will have no effect. And then configure the SSH daemon:
 
 ```ini
 [sshd]
@@ -88,6 +86,15 @@ port    = ssh
 logpath = %(sshd_log)s
 backend = %(sshd_backend)s
 ```
+
+This example shows the default which are sufficient for the most cases. The only import part is the `enabled = true` option. Now a user have maximum five tries to login to SSH before he get banned for ten minutes. Of course you can also tweak these settings in the`jail.local` according to your paranoia level.
+
+---
+
+- <https://infosec.mozilla.org/guidelines/openssh.html>
+
+
+
 
 ### Complete Play
 
@@ -176,3 +183,5 @@ backend = %(sshd_backend)s
     force: yes
     state: absent
 ```
+
+[fail2ban]: https://www.fail2ban.org/
