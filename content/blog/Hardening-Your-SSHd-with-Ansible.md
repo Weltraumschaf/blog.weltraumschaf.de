@@ -20,7 +20,7 @@ authors: Sven Strittmatter
 draft: true
 ---
 
-Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks come up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. to scan the whole IPv6 address space is feasable with some bandwidth. Just look at [Shodan](https://www.shodan.io/).
+Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks come up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. to scan the whole IPv6 address space is feasible with some bandwidth. Just look at [Shodan](https://www.shodan.io/).
 
 ### What I Use to Harden SSHd
 
@@ -28,9 +28,55 @@ Whenever you run a server in the wild wild web you should harden your SSHd setup
 2. Install [fail2ban](https://www.fail2ban.org/): This wards you from brute force or dictionary attacks.
 3. Configure SSHd right.
 
-### What are
+All the examples in this post are based on [Debian Buster](https://www.debian.org/releases/stable/index.de.html) and [Ansible 2.9](https://www.ansible.com/).
 
-- fail2ban
+### Change the TCP Port
+
+This is a dead simple advice and I do this since ages. It is quite obvious that SSHd listening on default port 22 are easy targets and it is no thrill to change this to any other number. Obviously you should not use a port number used for other services. If you are paranoid you can set on each host a different port. To change the port simply change the `Port` directive in `/etc/ssh/sshd_config`. As a Ansible task this will look like:
+
+```yaml
+- name: Setup alternate SSHd port
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '^#Port'
+    line: 'Port 4242'
+```
+
+To use a different non-standard port for SSH in Ansible you just need to set the `ansible_port` variable in your inventory, eg. same for all hosts:
+
+```ini
+[all]
+host1.foobar.com
+host2.foobar.com
+...
+[all:vars]
+ansible_port="4242"
+```
+
+or different port for each host:
+
+```ini
+[all]
+host1.foobar.com ansible_port="4243"
+host2.foobar.com ansible_port="4242"
+...
+```
+
+#### Drawback of Changing the Port
+
+There is one major drawback of this practice: You change the port during your Ansible play which will cause connection errors. I guess there are ways to change the port and reconnect during a play, but the most common approach is to split your plays. What I suggest is to make a simple "init" playbook which contains the SSH hardening stuff. Then you execute this playbook on a fresh machine with default port for SSH. After that you execute al your other playbooks as usual.
+
+This approach implies that you run your "init" playbook not via your inventory because this has changed SSH ports or you must overwrite this variable. I do the latter:
+
+```bash
+> ansible-playbook \
+    --limit host1.foobar.com \
+    init.yml \
+    -e "ansible_ssh_port=22"
+```
+
+---
+
 - <https://infosec.mozilla.org/guidelines/openssh.html>
 
 ### fail2ban Jail Configuration
