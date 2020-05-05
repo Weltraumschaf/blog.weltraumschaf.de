@@ -1,7 +1,7 @@
 ---
 title: "Hardening Your SSHd With Ansible"
-date: 2020-05-04T09:24:28+02:00
-lastmod: 2020-05-04T09:24:28+02:00
+date: 2020-05-05T17:03:08+02:00
+lastmod: 2020-05-05T17:03:08+02:00
 tags:
   - SSH
   - SSHd
@@ -9,18 +9,14 @@ tags:
   - hardening
 categories:
   - Security
-imgs: []
-cover: ""  # image show on top
-toc: true
-comments: false
-justify: false  # text-align: justify;
-single: false  # display as a single page, hide navigation on bottom, like as about page.
 license: 'Published under the <a href="https://www.weltraumschaf.de/the-beer-ware-license.txt">THE BEER-WARE LICENSE</a>.'
 authors: Sven Strittmatter
 draft: true
 ---
 
-Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks come up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. to scan the whole IPv6 address space is feasible with some bandwidth. Just look at [Shodan](https://www.shodan.io/).
+**Disclaimer**: This is not a beginner tutorial. You should have a brief understanding and some experiences with Linux and [Ansible][ansible].
+
+Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks come up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. to scan the whole IPv6 address space is feasible with some bandwidth. Just look at [Shodan][shodan].
 
 What I do to harden SSHd on my machines:
 
@@ -28,7 +24,7 @@ What I do to harden SSHd on my machines:
 2. Install [fail2ban][fail2ban]: This wards you from brute force or dictionary attacks.
 3. Configure SSHd right.
 
-All the examples in this post are based on [Debian Buster](https://www.debian.org/releases/stable/index.de.html) and [Ansible 2.9](https://www.ansible.com/).
+All the examples in this post are based on [Debian Buster][debian] and [Ansible][ansible] 2.9.
 
 ## Change the TCP Port
 
@@ -89,15 +85,19 @@ backend = %(sshd_backend)s
 
 This example shows the default which are sufficient for the most cases. The only import part is the `enabled = true` option and restart the daemon: `systemctl restart fail2ban.service`. Now a user have maximum five tries to login to SSH before he get banned for ten minutes. Of course you can also tweak these settings in the`jail.local` according to your paranoia level.
 
+## Recommended Settings for OpenSSH
 
----
+Mozilla has a very good and comprehensive list of settings you should use for your SSHd in their [infosec guidelines](https://infosec.mozilla.org/guidelines/openssh.html). I won't go into the details here because it makes no sense to just copy the content from Mozilla. You can read it over there by yourself. I'll only highlight the IMHO most important settings:
 
-- <https://infosec.mozilla.org/guidelines/openssh.html>
+* `PermitRootLogin`: This should be `no` . Not only for auditing reasons as documented in the guideline. This name easy easy to guess. so my advise is to use a random name like "slartibartfass" or such to exacerbate brute force attacks.
+* `AuthenticationMethods`: Only use key based authentication! No excuse! Protect your keys with a passphrase! No excuse! Use at least 4029 bits with RSA! Also no excuse!
+* do not use weak ciphers. The guideline tell you which one to use.
 
+And last but not least: **Use the latest version** of OpenSSH!
 
+## The Ansible Playbook
 
-
-### Complete Play
+And now here comes the palybook with some inline comments:
 
 ```yaml
 - name: Install fail2ban
@@ -105,12 +105,17 @@ This example shows the default which are sufficient for the most cases. The only
     name: fail2ban
     state: latest
 
+# Here you need your confguration. In my case I just copied the default
+# from /etc/fail2ban/jail.conf and enabled sshd as described above
 - name: Copy fail2ban configuration
   copy:
     src: jail.conf
-    # User config need to be named .local.
     dest: /etc/fail2ban/jail.local
-  notify: Restart fail2ban
+
+- name: Restart fail2ban
+  service:
+    name: fail2ban
+    state: restarted
 
 - name: Set SSH KexAlgorithms
   lineinfile:
@@ -166,23 +171,27 @@ This example shows the default which are sufficient for the most cases. The only
     state: present
     line: 'AuthenticationMethods publickey'
 
+# Here you should use your custom port!
 - name: Setup alternate SSHd port
   lineinfile:
     dest: /etc/ssh/sshd_config
     regexp: '^#Port'
-    line: 'Port {{ ssh_hardening_port }}'
+    line: 'Port 4242'
 
 - name: Disable SSH short modulis for DH
   shell: |-
     awk '$5 >= 3071' /etc/ssh/moduli > /tmp/moduli &&
     mv /tmp/moduli /etc/ssh/moduli
-  notify: Restart SSHd
 
-- name: Delete authorized_keys of root
-  file:
-    path: /root/.ssh/authorized_keys
-    force: yes
-    state: absent
+- name: Restart SSHd
+  service:
+    name: sshd
+    state: restarted
 ```
 
+I hope this helps you setting up a more secure server in the internet 😊
+
+[ansible]:  https://www.ansible.com/
+[debian]:   https://www.debian.org/releases/stable/index.de.html
 [fail2ban]: https://www.fail2ban.org/
+[shodan]:   https://www.shodan.io/
