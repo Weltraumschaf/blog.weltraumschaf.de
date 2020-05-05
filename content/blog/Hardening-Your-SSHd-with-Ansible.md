@@ -22,7 +22,7 @@ draft: true
 
 Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks come up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. to scan the whole IPv6 address space is feasible with some bandwidth. Just look at [Shodan](https://www.shodan.io/).
 
-### What I Use to Harden SSHd
+What I do to harden SSHd on my machines:
 
 1. Change the TCP port SSHd listens: This detains the most script kiddies or basic scans.
 2. Install [fail2ban][fail2ban]: This wards you from brute force or dictionary attacks.
@@ -30,7 +30,7 @@ Whenever you run a server in the wild wild web you should harden your SSHd setup
 
 All the examples in this post are based on [Debian Buster](https://www.debian.org/releases/stable/index.de.html) and [Ansible 2.9](https://www.ansible.com/).
 
-### Change the TCP Port
+## Change the TCP Port
 
 This is a dead simple advice and I do this since ages. It is quite obvious that SSHd listening on default port 22 are easy targets and it is no thrill to change this to any other number. Obviously you should not use a port number used for other services. If you are paranoid you can set on each host a different port. To change the port simply change the `Port` directive in `/etc/ssh/sshd_config`. As a Ansible task this will look like:
 
@@ -62,7 +62,7 @@ host2.foobar.com ansible_port="4242"
 ...
 ```
 
-#### Drawback of Changing the Port
+### Drawback of Changing the Port
 
 There is one major drawback of this practice: You change the port during your Ansible play which will cause connection errors. I guess there are ways to change the port and reconnect during a play, but the most common approach is to split your plays. What I suggest is to make a simple "init" playbook which contains the SSH hardening stuff. Then you execute this playbook on a fresh machine with default port for SSH. After that you execute al your other playbooks as usual.
 
@@ -75,7 +75,7 @@ This approach implies that you run your "init" playbook not via your inventory b
     -e "ansible_ssh_port=22"
 ```
 
-### fail2ban Jail Configuration
+## fail2ban Jail Configuration
 
 Next step is to install and configure [fail2ban][fail2ban]. This is a simple tool which refuses further connections on detection of brute force. It comes with a large example configuration located at `/etc/fail2ban/jail.conf` with lot of explanatory comments. One important point is that you must place your custom configuration at `/etc/fail2ban/jail.local`. Editing the default file will have no effect. And then configure the SSH daemon:
 
@@ -87,7 +87,8 @@ logpath = %(sshd_log)s
 backend = %(sshd_backend)s
 ```
 
-This example shows the default which are sufficient for the most cases. The only import part is the `enabled = true` option. Now a user have maximum five tries to login to SSH before he get banned for ten minutes. Of course you can also tweak these settings in the`jail.local` according to your paranoia level.
+This example shows the default which are sufficient for the most cases. The only import part is the `enabled = true` option and restart the daemon: `systemctl restart fail2ban.service`. Now a user have maximum five tries to login to SSH before he get banned for ten minutes. Of course you can also tweak these settings in the`jail.local` according to your paranoia level.
+
 
 ---
 
