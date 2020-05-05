@@ -16,3 +16,11 @@ imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
 eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
 enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+
+- Software Engineer in Stuttgart
+- interested in clean code, software architecture and security
+- working as architect, security consultant and trainer
+- worked for web agencies, large websites
+- worked for KWICK!: Social media and large scale stuff, agile
+- Jenkins Plugin -> moved on to java -> get in touch w/ enterprise IT
+- for detailed VC see Xing/LinkedIn
