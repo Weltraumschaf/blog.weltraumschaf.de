@@ -11,7 +11,6 @@ categories:
   - Security
 license: 'Published under the <a href="https://www.weltraumschaf.de/the-beer-ware-license.txt">THE BEER-WARE LICENSE</a>.'
 authors: Sven Strittmatter
-draft: true
 ---
 
 **Disclaimer**: This is not a beginner tutorial. You should have a brief understanding and some experiences with Linux and [Ansible][ansible].
