@@ -1,7 +1,7 @@
 ---
 title: "Hardening Your SSHd With Ansible"
-date: 2020-05-05T17:03:08+02:00
-lastmod: 2020-05-05T17:03:08+02:00
+date: 2020-05-08T10:12:37+02:00
+lastmod: 2020-05-08T10:12:37+02:00
 tags:
   - SSH
   - SSHd
@@ -16,7 +16,7 @@ draft: true
 
 **Disclaimer**: This is not a beginner tutorial. You should have a brief understanding and some experiences with Linux and [Ansible][ansible].
 
-Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks come up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. to scan the whole IPv6 address space is feasible with some bandwidth. Just look at [Shodan][shodan].
+Whenever you run a server in the wild wild web you should harden your SSHd setup. If you wonder why you should do that, then spin up a machine with enabled SSHd and watch the logs: Usually it takes only few minutes until the first scans and brute force attacks showing up in the logs. The internet is completely mapped. Not only IPv4 also IPv6. Scanning the whole IPv6 address space is feasible with some bandwidth. Just look at [Shodan][shodan].
 
 What I do to harden SSHd on my machines:
 
@@ -28,7 +28,7 @@ All the examples in this post are based on [Debian Buster][debian] and [Ansible]
 
 ## Change the TCP Port
 
-This is a dead simple advice and I do this since ages. It is quite obvious that SSHd listening on default port 22 are easy targets and it is no thrill to change this to any other number. Obviously you should not use a port number used for other services. If you are paranoid you can set on each host a different port. To change the port simply change the `Port` directive in `/etc/ssh/sshd_config`. As a Ansible task this will look like:
+This is a dead simple advice and I do this since ages. It is quite obvious that SSHd listening on default port 22 is an easy target and it is no thrill to change this to any other number. Obviously you should not use a port number used for other services. If you are paranoid you can set a different port on each host. To change the port simply change the `Port` directive in `/etc/ssh/sshd_config`. As a Ansible task this looks like:
 
 ```yaml
 - name: Setup alternate SSHd port
@@ -60,7 +60,7 @@ host2.foobar.com ansible_port="4242"
 
 ### Drawback of Changing the Port
 
-There is one major drawback of this practice: You change the port during your Ansible play which will cause connection errors. I guess there are ways to change the port and reconnect during a play, but the most common approach is to split your plays. What I suggest is to make a simple "init" playbook which contains the SSH hardening stuff. Then you execute this playbook on a fresh machine with default port for SSH. After that you execute al your other playbooks as usual.
+There is one major drawback of this practice: You change the port during your Ansible play which will cause connection errors. I guess there are ways to change the port and reconnect during a play, but the most common approach is to split your plays. What I suggest is to make a simple "init" playbook which contains the SSH hardening stuff. Then you execute this playbook on a fresh machine with default port for SSH. After that you execute your other playbooks as usual.
 
 This approach implies that you run your "init" playbook not via your inventory because this has changed SSH ports or you must overwrite this variable. I do the latter:
 
@@ -83,21 +83,21 @@ logpath = %(sshd_log)s
 backend = %(sshd_backend)s
 ```
 
-This example shows the default which are sufficient for the most cases. The only import part is the `enabled = true` option and restart the daemon: `systemctl restart fail2ban.service`. Now a user have maximum five tries to login to SSH before he get banned for ten minutes. Of course you can also tweak these settings in the`jail.local` according to your paranoia level.
+This example shows the default which are sufficient for the most cases. The only import part is the `enabled = true` option and restart the daemon: `systemctl restart fail2ban.service`. Now a user have maximum five tries to login to SSH before he get banned for ten minutes. Of course you can tweak these settings in the`jail.local` according to your paranoia level.
 
 ## Recommended Settings for OpenSSH
 
 Mozilla has a very good and comprehensive list of settings you should use for your SSHd in their [infosec guidelines](https://infosec.mozilla.org/guidelines/openssh.html). I won't go into the details here because it makes no sense to just copy the content from Mozilla. You can read it over there by yourself. I'll only highlight the IMHO most important settings:
 
-* `PermitRootLogin`: This should be `no` . Not only for auditing reasons as documented in the guideline. This name easy easy to guess. so my advise is to use a random name like "slartibartfass" or such to exacerbate brute force attacks.
+* `PermitRootLogin`: This should be `no` . Not only for auditing reasons as documented in the guideline. This name is easy to guess. so my advise is to use a random name like "slartibartfass" or such to exacerbate brute force attacks.
 * `AuthenticationMethods`: Only use key based authentication! No excuse! Protect your keys with a passphrase! No excuse! Use at least 4029 bits with RSA! Also no excuse!
-* do not use weak ciphers. The guideline tell you which one to use.
+* Do not use weak ciphers. The guideline tell you which ones to use.
 
 And last but not least: **Use the latest version** of OpenSSH!
 
 ## The Ansible Playbook
 
-And now here comes the palybook with some inline comments:
+And here comes the palybook with some inline comments:
 
 ```yaml
 - name: Install fail2ban
