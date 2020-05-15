@@ -11,7 +11,6 @@ categories:
     - Security
 license: 'Published under the <a href="https://www.weltraumschaf.de/the-beer-ware-license.txt">THE BEER-WARE LICENSE</a>.'
 authors: Sven Strittmatter
-draft: true
 ---
 
 **TL;DR**: Do not use Zoom at all! If you have to: Use it on iOS or in the browser.
