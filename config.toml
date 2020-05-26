@@ -1,7 +1,7 @@
 # Docu of all options: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "https://blog.weltraumschaf.de/"
 languageCode = "en-us"
-title = "Das Weltraumschaf"
+title = "The Weltraumschaf"
 theme = "hugo-notepadium"
 copyright = "<a href='https://www.weltraumschaf.de/impressum.html'>Impressum / Contact</a> – © 2020 Sven Strittmatter"
 enforce_ssl = true
@@ -30,10 +30,11 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 style = "dark"
-dateFormat = " 2. January 2006"
+dateFormat = "2. January 2006"
 logo = "/img/avatar.jpg"
 slogan = "Security / Software Architecture / Clean Code"
 fullRss = true
+description = "My personal opinions about software architecture, clean code, security and lot of other things."
 
 [params.nav]
 showCategories = true
@@ -46,3 +47,15 @@ url = "/projects/"
 [[params.nav.custom]]
 title = "About me"
 url = "/about/"
+
+[languages]
+[languages.en]
+weight = 1
+languageName = "English"
+
+[languages.de]
+weight = 2
+languageName = "Deutsch"
+languageCode = "de-de"
+title = "Das Weltraumschaf"
+description = "Meine Gedanken zu Software Architecture, Clean Code, Security und allem möglichen sonst noch."
