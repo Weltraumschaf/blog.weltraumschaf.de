@@ -2,6 +2,7 @@
 title: Some Words About me
 description: Some words about Sven Strittmatter.
 date: 2018-04-23T09:08:11+02:00
+lastmod: 2020-09-21T11:15:50+02:00
 single: true
 ---
 
