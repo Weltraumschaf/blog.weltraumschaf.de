@@ -20,6 +20,7 @@ Late in 2009 I began a new opportunity as QA manager at [KWICK! Community][11]. 
 - _14.9.2017_ at _Java User Group Stuttgart_: [Clean Code](https://www.jugs.org/va2017/09-14.html) (German, [Slides](https://github.com/Weltraumschaf/Slides/blob/master/CleanCode/Clean_Code.pdf))
 - _4.4.2020_ at _vSecCamp_ [Security-Test-Driven Company](https://barcamps.eu/seccamp2020/events/03e7ed9c-ca45-433f-ba5c-f5b8849911ea/security_test_driven_company) (German)
 - _15.9.20_ at _VKSI Sneak Preview meets Cyberforum IT RoundTable: DevSecOps_: [Security-Test-Driven Company](https://www.youtube.com/watch?v=I_C8E4_F1Do) (German)
+- _24.9.2020_ at Java Forum Stuttgart: [Security-Test-Driven Company](https://online.java-forum-stuttgart.de/a2/)
 
 ## Publications
 
