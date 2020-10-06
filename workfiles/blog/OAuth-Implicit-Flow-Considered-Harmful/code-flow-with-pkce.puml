@@ -1,0 +1,59 @@
+@startuml OAuth-Implicit-Flow-Considered-Harmful_Code-Flow-with-PKCE
+!include ../_weltraumschafTheme.ipuml
+!include ../_copyright.ipuml
+
+skinparam shadowing false
+skinparam componentStyle uml2
+
+box "my-app.com"
+participant Frontend
+end box
+
+participant User
+participant Browser
+
+box "some-api.com"
+  participant STS
+  participant API
+end box
+
+activate Frontend
+Frontend -> Frontend: 1. Generate <b>code verifier</b> & calculate <b>code challenge</b>
+
+group Front channel communication
+  Frontend -> Browser: 2. Open some-api.com w/ <b>code challenge</b>
+  deactivate Frontend
+  activate Browser
+  Browser -> STS: 3. Follow redirect to some-api.com w/ <b>code challenge</b>
+  activate STS
+  STS -> User: 4. Ask user for authentication
+  activate User
+  User --> STS: 5. Authenticate to some-api.com
+  STS -> User: 6. Allow my-app.com access
+  User --> STS: 7. Authorize access
+  deactivate User
+  STS -> STS: 8. Store <b>code challenge</b> & <b>authorization code</b>
+  STS -> Browser: 9. Redirect to my-app.com w/ <b>authorization code</b>
+  deactivate STS
+  Browser -> Frontend: 10. Follow redirect w/ <b>authorization code</b>
+  deactivate Browser
+  activate Frontend
+end
+
+group Back channel communication
+  Frontend -> STS: 11. Exchange <b>authorization code</b> w/ <b>code verifier</b>
+  activate STS
+  STS -> STS: 12. Check <b>code verifier</b> against stored <b>code challenge</b>
+  STS -> Frontend: 13. Respond <b>access token</b>
+  deactivate STS
+  deactivate Frontend
+end
+
+Frontend -> API: 14. Request w/ <b>access token</b>
+activate API
+activate Frontend
+API --> Frontend: 15. Response
+deactivate API
+deactivate Frontend
+
+@enduml

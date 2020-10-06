@@ -1,0 +1,56 @@
+@startuml OAuth-Implicit-Flow-Considered-Harmful_Code-Flow
+!include ../_weltraumschafTheme.ipuml
+!include ../_copyright.ipuml
+
+skinparam shadowing false
+skinparam componentStyle uml2
+
+box "my-app.com"
+participant Backend
+end box
+
+participant User
+participant Browser
+
+box "some-api.com"
+  participant STS
+  participant API
+end box
+
+group Front channel communication
+  activate Browser
+  Browser -> Backend: 1. Connect some-api account
+  activate Backend
+  Backend --> Browser: 2. Redirect to some-api.com
+  deactivate Backend
+  Browser -> STS: 3. Follow redirect to some-api.com
+  activate STS
+  STS -> User: 4. Ask user for authentication
+  activate User
+  User --> STS: 5. Authenticate to some-api.com
+  STS -> User: 6. Allow my-app.com access
+  User --> STS: 7. Authorize access
+  deactivate User
+  STS --> Browser: 8. Redirect to my-app.com w/ <b>authorization code</b>
+  deactivate STS
+  Browser -> Backend: 9. Follow redirect w/ <b>authorization code</b>
+  deactivate Browser
+end
+
+group Back channel communication
+  Backend -> STS: 10. Exchange <b>authorization code</b> & <b>client credentials</b>
+  activate Backend
+  activate STS
+  STS --> Backend: 11. Respond <b>access token</b> & <b>refresh token</b>
+  deactivate STS
+  deactivate Backend
+end
+
+Backend -> API: 12. Request w/ <b>access token</b>
+activate Backend
+activate API
+API --> Backend: 13. Response
+deactivate API
+deactivate Backend
+
+@enduml
