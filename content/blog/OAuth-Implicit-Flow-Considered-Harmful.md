@@ -7,8 +7,12 @@ tags:
   - PKCE
 categories:
   - Security
-imgs: []
-cover: ""  # image show on top
+imgs:
+  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Cover.jpg"
+  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Implicit-Flow.png"
+  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Code-Flow.png"
+  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Code-Flow-with-PKCE.png"
+cover: "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Cover.jpg" # image show on top
 toc: true
 comments: false
 justify: false  # text-align: justify;
