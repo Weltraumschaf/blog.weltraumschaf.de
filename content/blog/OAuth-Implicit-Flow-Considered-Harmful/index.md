@@ -8,11 +8,11 @@ tags:
 categories:
   - Security
 imgs:
-  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Cover.jpg"
-  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Implicit-Flow.png"
-  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Code-Flow.png"
-  - "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Code-Flow-with-PKCE.png"
-cover: "/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Cover.jpg" # image show on top
+  - "Cover.jpg"
+  - "Implicit-Flow.png"
+  - "Code-Flow.png"
+  - "Code-Flow-with-PKCE.png"
+cover: "Cover.jpg" # image show on top
 toc: true
 comments: false
 justify: false  # text-align: justify;
@@ -29,7 +29,7 @@ The _OAuth 2.0 Implicit Flow_ is from ancient times when we only had limited bro
 
 Let's examine a brief example of _OAuth 2.0 Implicit Flow_:
 
-![Sequence diagram for OAuth 2.0 Implicit Flow](/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Implicit-Flow.png)
+![Sequence diagram for OAuth 2.0 Implicit Flow](Implicit-Flow.png)
 
 In the above sequence diagram you see the flow for  a frontend application hosted at `https://www.my-app.com` which want to access an API at `https://www.some-api.com` and therefore need an _access token_ from the _security token service_ (STS) responsible for this API. For the sake of brevity we assume that both the API and STS are hosted at the same domain.
 
@@ -61,7 +61,7 @@ The alternative is the _OAuth 2.0 Authorization Code Flow with PKCE_. (Hint: The
 
 We use the same example as above with our app hosted at `https://www.my-app.com` and an API we integrate hosted at `https://www.some-api.com`. Here is the full sequence of the _code flow_:
 
-![Sequence diagram for OAuth 2.0 Code Flow](/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Code-Flow.png)
+![Sequence diagram for OAuth 2.0 Code Flow](Code-Flow.png)
 
 The first seven steps are merely identical to the _implicit flow_. The main difference here is that we do not hve a frontend but a backend in this diagram. Of course does `my-app.com` also have a frontend, but this is rendered by the backend and does not play any role in the _authorization code flow_. Also a difference here is that step one is "Connect  some-api account". This is like the "connect GitHub/Twitter/Facebook/Whatever"-buttons you may have seen at other sites.
 
@@ -78,7 +78,7 @@ Why is this more secure than _implicit flow_? The important difference is that t
 
 So the _code flow_ from above works really well, if you have a traditional server side web application with a backend where you can store your _client credentials_. But what if you have no such backend because you are a single page or mobile application? PKCE for the rescue!
 
-![Sequence diagram for OAuth 2.0 Code Flow](/img/blog/OAuth-Implicit-Flow-Considered-Harmful_Code-Flow-with-PKCE.png)
+![Sequence diagram for OAuth 2.0 Code Flow](Code-Flow-with-PKCE.png)
 
 Some say PKCE is like a one time password. So let's go into the details how it works. For the first sight it looks quite similar to the traditional _code flow_ without PKCE. That's no coincidence because PKCE is just a mechanism on top of _code flow_. The first important thing to realise: There are no _client credentials_ in the play here. Instead the frontend generates a _code verifier_, which must be a [nonce][wiki-nonce] and derives a _code challenge_ with a hash function from it. This _code challenge_ is passed to the _STS_ via the initial _front channel communication_ when obtaining the _authorization code_ and the _STS_ stores this along with the issued _authorization code_. The remaining back and forth is the same as described above in the _code flow_.
 
