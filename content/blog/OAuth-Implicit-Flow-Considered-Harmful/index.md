@@ -92,7 +92,7 @@ You may ask why there is no _refresh token_? Same reason why there are no _clien
 - Some say that _implicit flow_ is not less safe than it was ever and if suitable you can use it. I say no! And some others like [Dr. Fett][drfett] also say so, and he's one of the dudes writing the RFCs. So he should know.
 - Maybe you are confused because I used the terms frontend and backend alternating in the diagrams. This is to illustrate "where" the _OAuth 2.0 client_ resides. The backend is something secured in a datacenter. Frontend is something at an insecure place like a browser or mobile device, but both are _OAuth 2.0 clients_.
 
-Cover image by <a href="https://pixabay.com/users/mastertux-470906/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3348307">MasterTux</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3348307">Pixabay</a>
+Cover image by [MasterTux](https://pixabay.com/users/mastertux-470906) from [Pixabay](https://pixabay.com).
 
 [ms-impl-flow]: https://docs.microsoft.com/en-gb/azure/active-directory/develop/v2-oauth2-implicit-grant-flow
 [wiki-mtls]:    https://en.wikipedia.org/wiki/Mutual_authentication
