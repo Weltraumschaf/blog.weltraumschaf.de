@@ -44,6 +44,8 @@ So *authorization* is the process of verify what you are allowed to do.
 
 ## Last Words
 
-*Authentication* can be used without *authorization* but vice versa is not possible. To *authorize* someone or something – not only natural persons may be *authenticated* or *authorized*, but also entities like computers, servers, APIs, etc. – it is required to *authenticate* first to know who you grant or decline access (*authorize*). Eg. when you walk around in a large factory there may be *restricted areas* with a security guard protecting it. You must show him your corporate identity card for *authentication*. Then the guard looks up in his system if you are allowed to access that ares (*authorization*) and grants or declines that you go on.
+*Authentication* can be used without *authorization* but vice versa is not possible. To *authorize* someone or something – not only natural persons may be *authenticated* or *authorized*, but also entities like computers, servers, APIs, etc. – it is required to *authenticate* first to know who you grant or decline access (*authorize*). Eg. when you walk around in a large factory there may be *restricted areas* with a security guard protecting it. You must show him your corporate identity card for *authentication*. Then the guard looks up in some system, if you are allowed to access that ares (*authorization*) and grants or declines that you go on.
+
+**UPDATE** Above I wrote you can't do *authorization* without *authentication*. I think that's not completely true. As far as I konw this is feasable with some [zerro knowledge](https://en.wikipedia.org/wiki/Zero_knowledge) protocols, but this is a topic I have no clue at the moment.
 
 Cover image by [Zachary Lisko](https://unsplash.com/@liskozac) from [Unsplash](https://unsplash.com/).
