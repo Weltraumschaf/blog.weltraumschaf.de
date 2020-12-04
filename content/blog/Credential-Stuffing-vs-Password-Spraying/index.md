@@ -33,3 +33,5 @@ So _credential stuffing_ uses a list of known username password combinations to 
 In contrast this is an attack where the adversary **only knows the username** and tries a list of [common or weak passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords) with it. Eg. you know that the usernames at foobar.com are same as the email addresses and you can harvest some of them from the website. Then you use a list of commonly used or weak password (eg. `test1234`, `password` etc.) together wit the usernames to gain access.
 
 So _password spraying_ uses a list of known usernames in combination with commonly known and/or weak passwords to brute-force authentication.
+
+Cover image by [Methi SOMÇAĞ](https://unsplash.com/@methi_somcag) from [Unsplash](https://unsplash.com/).
