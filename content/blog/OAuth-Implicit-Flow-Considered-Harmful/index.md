@@ -55,7 +55,7 @@ Now imagine that someone place a malicious app on your phone which also register
 
 ## What Is the Alternative?
 
-The alternative is the _OAuth 2.0 Authorization Code Flow with PKCE_. (Hint: The OAuth 2.0 dudes pronounce this "PKCE" thingy "pigsi".) So first: For what stands PKCE? This is the abbreviation for _Proof Key for Code Exchange_. Ok, didn't give as any hint how it works. First I give a short introduction how _OAuth 2.0 Authorization Code Flow_ works and then describe why we need this "pigsi" thingy and how it works.
+The alternative is the _OAuth 2.0 Authorization Code Flow with PKCE_. (Hint: The OAuth 2.0 dudes pronounce this "PKCE" thingy "pigsi".) So first: For what stands PKCE? This is the abbreviation for _Proof Key for Code Exchange_. Ok, didn't give us any hint how it works. First I give a short introduction how _OAuth 2.0 Authorization Code Flow_ works and then describe why we need this "pigsi" thingy and how it works.
 
 ### OAuth 2.0 Authorization Code Flow
 
@@ -63,7 +63,7 @@ We use the same example as above with our app hosted at `https://www.my-app.com`
 
 ![Sequence diagram for OAuth 2.0 Code Flow](Code-Flow.png)
 
-The first seven steps are merely identical to the _implicit flow_. The main difference here is that we do not hve a frontend but a backend in this diagram. Of course does `my-app.com` also have a frontend, but this is rendered by the backend and does not play any role in the _authorization code flow_. Also a difference here is that step one is "Connect  some-api account". This is like the "connect GitHub/Twitter/Facebook/Whatever"-buttons you may have seen at other sites.
+The first seven steps are merely identical to the _implicit flow_. The main difference here is that we do not have a frontend but a backend in this diagram. Of course does `my-app.com` also have a frontend, but this is rendered by the backend and does not play any role in the _authorization code flow_. Also a difference here is that step one is "Connect  some-api account". This is like the "connect GitHub/Twitter/Facebook/Whatever"-buttons you may have seen at other sites.
 
 The big difference in this diagram to the previous one is that we distinguish the back and forth communication in two kinds:
 
