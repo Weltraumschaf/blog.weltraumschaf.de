@@ -98,5 +98,5 @@ Cover image by [MasterTux](https://pixabay.com/users/mastertux-470906) from [Pix
 [wiki-mtls]:    https://en.wikipedia.org/wiki/Mutual_authentication
 [wiki-nonce]:   https://en.wikipedia.org/wiki/Cryptographic_nonce
 [drfett]:       https://twitter.com/dfett42/status/1268977956770193408
-[oauth20-bcp]:  https://www.ietf.org/id/draft-ietf-oauth-security-topics-16.html
+[oauth20-bcp]:  https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics
 [oauth21]:      https://oauth.net/2.1/
