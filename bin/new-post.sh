@@ -7,12 +7,12 @@ set -eu
 #
 
 if [ $# = 0 ]; then
-  echo "USAGE: $(basename "${0}") givesome words for the title"
+  >&2 echo "USAGE: $(basename "${0}") give some words for the title"
   exit 1
 fi
 
 # https://github.com/nickjj/title-case-converter
-title=$(tcc "${*}")
+title="${*}"
 filename="${title// /-}.md"
 
 echo "Title:    ${title}"
