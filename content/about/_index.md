@@ -6,7 +6,7 @@ lastmod: 2020-09-21T11:15:50+02:00
 single: true
 ---
 
-My name is Sven Strittmatter and I'm a software engineer home based in [Stuttgart (Germany)][1]. 2005 I've graduated as [Diplom-Ingenieur][2] (DH) in information technology at [Duale Hochschule Stuttgart][3].
+My name is Sven Strittmatter, and I'm a software engineer home based in [Stuttgart (Germany)][1]. 2005 I've graduated as [Diplom-Ingenieur][2] (DH) in information technology at [Duale Hochschule Stuttgart][3].
 
 As part of practical education for my studies I was employed at the [Fraunhofer IPA][4] in the departments for "production and automation engineering" and "facility layout and logistics planing". Here I got in touch with large scaled projects and supported them with software tools.
 
