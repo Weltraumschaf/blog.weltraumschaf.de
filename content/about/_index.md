@@ -26,6 +26,7 @@ Late in 2009 I began a new opportunity as QA manager at [KWICK! Community][11]. 
 ## Publications
 
 - _18.8.2020_ at _Informatik Aktuell_: [Security-Test-Driven Company](https://www.informatik-aktuell.de/betrieb/sicherheit/security-test-driven-company.html) 🇩🇪
+- _25.4.2024_ at _iteratec blog_: [Wie ist dein Threat Model?](https://explore.iteratec.com/blog/threat-modeling) 🇩🇪
 
 [1]:  http://maps.google.de/maps?q=maps+stuttgart&ie=UTF8&oe=utf-8&client=firefox-a&hnear=Stuttgart,+Baden-W%C3%BCrttemberg&gl=de&t=h&z=11
 [2]:  http://en.wikipedia.org/wiki/Engineer%27s_degree#Germany
