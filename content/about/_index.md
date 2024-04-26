@@ -16,16 +16,16 @@ Late in 2009 I began a new opportunity as QA manager at [KWICK! Community][11]. 
 
 ## Talks
 
-- _9.2.2011_ at _PHP User Group Stuttgart_: [JavaScript – Es ist nicht C](https://blog.coworking0711.de/treffen-02-2011-der-php-usergroup-stuttgart-mit-vortrag-javascript-es-ist-nicht-c/) (German, [Slides](https://github.com/Weltraumschaf/Slides/blob/master/JavaScript-Es_ist_nicht_C/javascript-itsnotc.pdf))
-- _14.9.2017_ at _Java User Group Stuttgart_: [Clean Code](https://www.jugs.org/va2017/09-14.html) (German, [Slides](https://github.com/Weltraumschaf/Slides/blob/master/CleanCode/Clean_Code.pdf))
-- _4.4.2020_ at _vSecCamp_ [Security-Test-Driven Company](https://barcamps.eu/seccamp2020/events/03e7ed9c-ca45-433f-ba5c-f5b8849911ea/security_test_driven_company) (German)
-- _15.9.20_ at _VKSI Sneak Preview meets Cyberforum IT RoundTable: DevSecOps_: [Security-Test-Driven Company](https://www.youtube.com/watch?v=I_C8E4_F1Do) (German)
-- _24.9.2020_ at _Java Forum Stuttgart_: [Security-Test-Driven Company](https://online.java-forum-stuttgart.de/a2/)
-- _10.12.2020_ at IT-Tage: [Security-Test-Driven Company](https://www.ittage.informatik-aktuell.de/programm/2020/security-test-driven-company-learning-by-pain.html)
+- _9.2.2011_ at _PHP User Group Stuttgart_: [JavaScript – Es ist nicht C](https://blog.coworking0711.de/treffen-02-2011-der-php-usergroup-stuttgart-mit-vortrag-javascript-es-ist-nicht-c/) 🇩🇪 ([Slides](https://github.com/Weltraumschaf/Slides/blob/master/JavaScript-Es_ist_nicht_C/javascript-itsnotc.pdf))
+- _14.9.2017_ at _Java User Group Stuttgart_: [Clean Code](https://www.jugs.org/va2017/09-14.html) 🇩🇪 ([Slides](https://github.com/Weltraumschaf/Slides/blob/master/CleanCode/Clean_Code.pdf))
+- _4.4.2020_ at _vSecCamp_ [Security-Test-Driven Company](https://barcamps.eu/seccamp2020/events/03e7ed9c-ca45-433f-ba5c-f5b8849911ea/security_test_driven_company) 🇩🇪
+- _15.9.20_ at _VKSI Sneak Preview meets Cyberforum IT RoundTable: DevSecOps_: [Security-Test-Driven Company](https://www.youtube.com/watch?v=I_C8E4_F1Do) 🇩🇪
+- _24.9.2020_ at _Java Forum Stuttgart_: [Security-Test-Driven Company](https://online.java-forum-stuttgart.de/a2/) 🇩🇪
+- _10.12.2020_ at IT-Tage: [Security-Test-Driven Company](https://www.ittage.informatik-aktuell.de/programm/2020/security-test-driven-company-learning-by-pain.html) 🇩🇪
 
 ## Publications
 
-- _18.8.2020_ at _Informatik Aktuell_: [Security-Test-Driven Company](https://www.informatik-aktuell.de/betrieb/sicherheit/security-test-driven-company.html) (Gemran)
+- _18.8.2020_ at _Informatik Aktuell_: [Security-Test-Driven Company](https://www.informatik-aktuell.de/betrieb/sicherheit/security-test-driven-company.html) 🇩🇪
 
 [1]:  http://maps.google.de/maps?q=maps+stuttgart&ie=UTF8&oe=utf-8&client=firefox-a&hnear=Stuttgart,+Baden-W%C3%BCrttemberg&gl=de&t=h&z=11
 [2]:  http://en.wikipedia.org/wiki/Engineer%27s_degree#Germany
